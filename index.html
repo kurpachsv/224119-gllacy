@@ -35,20 +35,21 @@
         </form>
       </div>
       <ul class="user-navigation">
-        <li class="login-link"><a href="#">Вход</a></li>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-          <p class="login-form-field">
-            <label class="visually-hidden" for="user-email">Электронная почта</label>
-            <input id="user-email" type="text" name="email" placeholder="Электронная почта">
-          </p>
-          <p class="login-form-field">
-            <label class="visually-hidden" for="user-password">Пароль</label>
-            <input id="user-password" type="password" name="password" placeholder="Пароль">
-          </p>
-          <a class="link login-form-link" href="#">Забыли пароль?</a>
-          <a class="link login-form-link" href="#">Новая регистрация</a>
-          <button class="button" type="submit">Войти</button>
-        </form>
+        <li class="login-link"><a href="#">Вход</a>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+            <p class="login-form-field">
+              <label class="visually-hidden" for="user-email">Электронная почта</label>
+              <input id="user-email" type="text" name="email" placeholder="Электронная почта">
+            </p>
+            <p class="login-form-field">
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input id="user-password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <a class="link login-form-link" href="#">Забыли пароль?</a>
+            <a class="link login-form-link" href="#">Новая регистрация</a>
+            <button class="button" type="submit">Войти</button>
+          </form>
+        </li>
       </ul>
       <div class="site-cart">
         <a class="cart-link" href="#">Корзина</a>
@@ -100,7 +101,7 @@
               </span>
             </b>
           </div>
-          <a class="button" href="#">Оформить заказ</button>
+          <a class="button" href="#">Оформить заказ</a>
         </form>
       </div>
     </nav>
@@ -169,12 +170,12 @@
           <input id="callback-name" type="text" name="name" placeholder="Как вас зовут?">
         </p>
         <p class="callback-form-field">
-          <label class="visually-hidden" for="callback-name">Электронная почта</label>
-          <input id="callback-name" type="text" name="email" placeholder="Ваша почта для ответа?">
+          <label class="visually-hidden" for="callback-email">Электронная почта</label>
+          <input id="callback-email" type="text" name="email" placeholder="Ваша почта для ответа?">
         </p>
         <p class="callback-form-field">
           <label class="visually-hidden" for="callback-message">Сообщение</label>
-          <textarea id="callback-message" type="text" name="message" placeholder="Напишете что-нибудь...">
+          <textarea id="callback-message" name="message" placeholder="Напишете что-нибудь..."></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
@@ -185,7 +186,7 @@
       <li><a class="social-button social-button-twitter" href="#">
         <span class="visually-hidden">Наш Твиттер</span></a>
       </li>
-      <li><a class="social-button social-button-inst" href="#"></a>
+      <li><a class="social-button social-button-inst" href="#">
         <span class="visually-hidden">Наш Инстаграм</span></a>
       </li>
       <li><a class="social-button social-button-fb" href="#">
