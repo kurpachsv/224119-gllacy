@@ -52,57 +52,7 @@
         </li>
       </ul>
       <div class="site-cart">
-        <a class="cart-link" href="#">Корзина</a>
-        <form class="cart-form" action="https://echo.htmlacademy.ru" method="POST">
-          <ul class="cart-items">
-            <li class="cart-item">
-              <button class="cart-item-remove">
-                <span class="visually-hidden">Удалить</span>
-              </button>
-              <a href="#">
-                <img class="cart-item-thumbnail" src="img/product-thumb-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                <span class="cart-item-title">Пломбир с апельсиновым джемом</span>
-              </a>
-              <b class="cart-item-count">
-                1,5
-                <span class="cart-item-unit">кг</span>
-                <span class="cart-item-price">200</span>
-              </b>
-              <b class="cart-item-total-price">
-                300
-                <span class="cart-item-currency">руб</span>
-              </b>
-            </li>
-            <li class="cart-item">
-              <button class="cart-item-remove">
-                  <span class="visually-hidden">Удалить</span>
-                </button>
-                <a href="#">
-                  <img class="cart-item-thumbnail" src="img/product-thumb-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                  <span class="cart-item-title">Клубничный пломбир с присыпкой из белого шоколада</span>
-                </a>
-                <b class="cart-item-count">
-                  1,5
-                  <span class="cart-item-unit">кг</span>
-                  <span class="cart-item-price">300</span>
-                </b>
-                <b class="cart-item-total-price">
-                  450
-                  <span class="cart-item-currency">руб</span>
-                </b>
-            </li>
-          </ul>
-          <div class="cart-items-total">
-            <b>
-              Итого:
-              <span class="cart-items-total-price">
-                750
-                <span class="cart-items-currency">руб</span>
-              </span>
-            </b>
-          </div>
-          <a class="button" href="#">Оформить заказ</a>
-        </form>
+        <a class="cart-link cart-empty" href="#">Пусто</a>
       </div>
     </nav>
   </header>
@@ -158,28 +108,6 @@
       <!-- блок, который еще не размечаем -->
       <img src="img/index-map-bg.jpg" width="1250" height="430" alt="Карта проезда">
     </section>
-    <section class="modal modal-callback">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form class="callback-form" action="https://echo.htmlacademy.ru" method="POST">
-        <button class="callback-form-close">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-        <b>Мы обязательно вам ответим!</b>
-        <p class="callback-form-field">
-          <label class="visually-hidden" for="callback-name">Имя</label>
-          <input id="callback-name" type="text" name="name" placeholder="Как вас зовут?">
-        </p>
-        <p class="callback-form-field">
-          <label class="visually-hidden" for="callback-email">Электронная почта</label>
-          <input id="callback-email" type="text" name="email" placeholder="Ваша почта для ответа?">
-        </p>
-        <p class="callback-form-field">
-          <label class="visually-hidden" for="callback-message">Сообщение</label>
-          <textarea id="callback-message" name="message" placeholder="Напишете что-нибудь..."></textarea>
-        </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-    </section>
   </main>
   <footer class="main-footer">
     <ul class="social-items">
@@ -209,6 +137,28 @@
       <p>Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
     </section>
   </footer>
+  <section class="modal modal-callback">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form class="callback-form" action="https://echo.htmlacademy.ru" method="POST">
+      <button class="callback-form-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <b>Мы обязательно вам ответим!</b>
+      <p class="callback-form-field">
+        <label class="visually-hidden" for="callback-name">Имя</label>
+        <input id="callback-name" type="text" name="name" placeholder="Как вас зовут?">
+      </p>
+      <p class="callback-form-field">
+        <label class="visually-hidden" for="callback-email">Электронная почта</label>
+        <input id="callback-email" type="text" name="email" placeholder="Ваша почта для ответа?">
+      </p>
+      <p class="callback-form-field">
+        <label class="visually-hidden" for="callback-message">Сообщение</label>
+        <textarea id="callback-message" name="message" placeholder="Напишете что-нибудь..."></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>
