@@ -1,0 +1,287 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Roboco", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.main-navigation ul {
+  list-style: none;
+}
+
+.site-submenu-item a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+
+  background-color: #f7f6f3;
+}
+
+.site-submenu-item a:focus,
+.site-submenu-item a:hover {
+  background-color: #fbded7;
+}
+
+.site-submenu-item a:active {
+  background-color: #f6b5a5;;
+}
+
+.site-submenu-item a.active {
+  background-color: #d07058;
+}
+
+.site-menu-item > a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #323232;
+
+  background-color: #f7f6f3;
+}
+
+.site-menu-item > a:focus,
+.site-menu-item > a:hover {
+  background-color: #f7f6f3;
+}
+
+.site-menu-item > a.active {
+  color: #ffffff;
+
+  background-color: #d07058;
+}
+
+.site-search a,
+.login-item a,
+.site-cart a {
+  color: #ffffff;
+
+  background-color: #849d8f
+}
+
+.site-search a:hover,
+.login-item a:hover,
+.site-cart a:hover {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  background-color: #849d8f
+}
+
+.link:focus,
+.link:active {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffbc9e;
+
+  background-color: #849d8f
+}
+
+.link.active {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.link:focus.active,
+.link:active.active {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #e84d37;
+
+  background-color: #ffffff;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  vertical-align: middle;
+
+  /* ... */
+}
+
+.features {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #323232;
+
+  background-color: #ede2cc;
+}
+
+.features h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #323232;
+
+  background-color: #ede2cc;
+}
+
+.features-items {
+  list-style: none;
+}
+
+.features-items a {
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.blog-post-announcement {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.blog-post-announcement h2 {
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  font-weight: 500;
+
+  background-color: #ffffff
+}
+
+.blog-post-announcement a {
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  text-decoration: underline;
+  font-weight: 700;
+
+  background-color: #ffffff;
+}
+
+.subscribe {
+  color: #5a5a5a;
+
+  background-color: #f8f7f4;
+}
+
+.subscribe p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #5a5a5a;
+
+  background-color: #f8f7f4;
+}
+
+.subscribe input {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  background-color: #ffffff;
+}
+
+
+.social-items,
+.info-items {
+  list-style: none;
+}
+
+.social-items a,
+.info-items a,
+.footer-copyright a {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.breadcrumbs,
+.catalog-items {
+  list-style: none
+}
+
+.breadcrumbs-link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.breadcrumbs-current {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  border-bottom-style: none;
+
+  background-color: #849d8f;
+}
+
+.catalog-item-price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.catalog-item-currency {
+  font-size: 45px;
+}
+
+.catalog-item-unit {
+  font-size: 30px;
+}
+
+/* всплывающие окна и попапы еще не размечаем */
+.popup,
+.modal {
+  display: none;
+}
