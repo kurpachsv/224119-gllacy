@@ -36,13 +36,13 @@ a {
   background-color: #849d8f;
 }
 
-.link:focus {
+.link:hover {
   color: #ffbc9e;
 
   background-color: #849d8f;
 }
 
-.link:active {
+.link:focus {
   color: #ffbc9e;
 
   background-color: #849d8f;
@@ -58,13 +58,13 @@ a {
   background-color: #ffffff;
 }
 
-.link-bg:focus {
+.link-bg:hover {
   color: #e84d37;
 
   background-color: #ffffff;
 }
 
-.link-bg:active {
+.link-bg:focus {
   color: #e84d37;
 
   background-color: #ffffff;
@@ -333,6 +333,10 @@ a {
   background-color: #849d8f;
 }
 
+.for-delivers.link {
+  font-weight: 700;
+}
+
 .footer-copyright p {
   font-size: 12px;
   line-height: 18px;
@@ -350,7 +354,7 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* breadcrambs */
+/* breadcrumbs */
 
 .breadcrumbs {
   list-style: none;
