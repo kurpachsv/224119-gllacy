@@ -333,7 +333,7 @@ a {
   background-color: #849d8f;
 }
 
-.for-delivers.link {
+.for-vendors.link {
   font-weight: 700;
 }
 
@@ -347,6 +347,9 @@ a {
 }
 
 .footer-copyright p > a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
   color: #fefefe;
 
   background-color: #849d8f;
@@ -358,15 +361,21 @@ a {
 
 .breadcrumbs {
   list-style: none;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
   color: #ffffff;
 
   background-color: #849d8f;
 }
 
+.breadcrumbs-link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
 .breadcrumbs-current {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
   border-bottom-style: none;
 }
 
