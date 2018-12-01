@@ -14,7 +14,7 @@ body {
   font-family: "Roboco", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 700;
+  font-weight: 500;
   color: #ffffff;
 
   background-color: #849d8f;
@@ -24,113 +24,53 @@ a {
   text-decoration: none;
 }
 
-.main-navigation {
-  line-height: 18px;
-  color: #ffffff;
-
-  background-color: #849d8f;
-}
-
-.main-navigation ul {
-  list-style: none;
-}
-
-.site-submenu-item a {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #323232;
-
-  background-color: #f7f6f3;
-}
-
-.site-submenu-item a:focus,
-.site-submenu-item a:hover {
-  background-color: #fbded7;
-}
-
-.site-submenu-item a:active {
-  background-color: #f6b5a5;;
-}
-
-.site-submenu-item a.active {
-  background-color: #d07058;
-}
-
-.site-menu-item > a {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #323232;
-
-  background-color: #f7f6f3;
-}
-
-.site-menu-item > a:focus,
-.site-menu-item > a:hover {
-  background-color: #f7f6f3;
-}
-
-.site-menu-item > a.active {
-  color: #ffffff;
-
-  background-color: #d07058;
-}
-
-.site-search a,
-.login-item a,
-.site-cart a {
-  color: #ffffff;
-
-  background-color: #849d8f
-}
-
-.site-search a:hover,
-.login-item a:hover,
-.site-cart a:hover {
-  color: #323232;
-
-  background-color: #ffffff;
-}
+/* ссылки */
 
 .link {
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
   color: #ffffff;
+
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
-  background-color: #849d8f
+  background-color: #849d8f;
 }
 
-.link:focus,
-.link:active {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
+.link:focus {
   color: #ffbc9e;
 
-  background-color: #849d8f
+  background-color: #849d8f;
 }
 
-.link.active {
+.link:active {
+  color: #ffbc9e;
+
+  background-color: #849d8f;
+}
+
+.link-bg {
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
   color: #323232;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
   background-color: #ffffff;
 }
 
-.link:focus.active,
-.link:active.active {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
+.link-bg:focus {
   color: #e84d37;
 
   background-color: #ffffff;
 }
+
+.link-bg:active {
+  color: #e84d37;
+
+  background-color: #ffffff;
+}
+
+/* кнопки */
 
 .button {
   font: inherit;
@@ -138,39 +78,200 @@ a {
   text-align: center;
   font-size: 32px;
   line-height: 44px;
+  font-weight: 700;
   color: #ffffff;
   vertical-align: middle;
 
-  /* ... */
+  background-color: #e94f37;
 }
 
-.features {
+.button:focus {
+  color: #ffffff;
+
+  background-color: #ee7360;
+}
+
+.button:active {
+  color: #ffffff;
+
+  background-color: #de5a3b;
+}
+
+.button-bg {
+  font: inherit;
+
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  vertical-align: middle;
+
+  background-color: #b93542;
+}
+
+.button-bg:focus {
+  color: #fefefe;
+
+  background-color: #de593b;
+}
+
+.button-bg:active {
+  color: #fceeec;
+
+  background-color: #b93542;
+}
+
+/* карточка товара */
+
+.catalog-items {
+  list-style: none;
+}
+
+.catalog-item-title {
   font-size: 16px;
   line-height: 22px;
+  color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.catalog-item-price {
+  font-size: 45px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.catalog-item-currency {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.catalog-item-unit {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* главное меню */
+
+.main-navigation ul {
+  list-style: none;
+}
+
+.menu-link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #323232;
+
+  background-color: #849d8f;
+}
+
+.menu-link:hover {
+  color: #323232;
+
+  background-color: #ededed;
+}
+.menu-link:focus,
+.menu-link:active {
+  color: #323232;
+
+  background-color: #ededed;
+}
+
+.menu-link.active {
+  color: #ffffff;
+
+  background-color: #d07058;
+}
+
+.submenu-link{
+  font-size: 14px;
+  line-height: 16px;
   font-weight: 400;
   color: #323232;
 
-  background-color: #ede2cc;
+  background-color: #f8f7f4;
+}
+
+.submenu-link:hover {
+  color: #323232;
+
+  background-color: #fbded7;
+}
+
+.submenu-link:focus,
+.submenu-link:active {
+  color: #323232;
+
+  background-color: #f6b5a5;
+}
+
+.submenu-link.active {
+  color: #323232;
+
+  background-color: #d07058;
+}
+
+.login-link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: #89a193
+}
+
+.login-link:hover {
+  color: #323232;
+
+  background-color: #f8f7f4
+}
+
+.cart-link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+
+  background-color: #f8f7f4
+}
+
+.cart-empty {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: #89a193
+}
+
+/* блок примуществ */
+
+.features {
+  color: #323232;
+
+  background-color: #eee2cc
 }
 
 .features h2 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
-  color: #323232;
-
-  background-color: #ede2cc;
 }
 
 .features-items {
   list-style: none;
 }
 
-.features-items a {
-  color: #ffffff;
-
-  background-color: #849d8f;
+.features-item {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
+
+/* анонс в блоге */
 
 .blog-post-announcement {
   color: #323232;
@@ -181,21 +282,18 @@ a {
 .blog-post-announcement h2 {
   font-size: 16px;
   line-height: 22px;
-  color: #323232;
   font-weight: 500;
-
-  background-color: #ffffff
 }
 
 .blog-post-announcement a {
   font-size: 24px;
   line-height: 30px;
-  color: #323232;
-  text-decoration: underline;
   font-weight: 700;
-
-  background-color: #ffffff;
+  text-decoration: underline;
+  color: #323232;
 }
+
+/* подписка */
 
 .subscribe {
   color: #5a5a5a;
@@ -207,9 +305,6 @@ a {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  color: #5a5a5a;
-
-  background-color: #f8f7f4;
 }
 
 .subscribe input {
@@ -222,15 +317,14 @@ a {
   background-color: #ffffff;
 }
 
+/* футер */
 
 .social-items,
 .info-items {
   list-style: none;
 }
 
-.social-items a,
-.info-items a,
-.footer-copyright a {
+.info-items a {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -239,12 +333,27 @@ a {
   background-color: #849d8f;
 }
 
-.breadcrumbs,
-.catalog-items {
-  list-style: none
+.footer-copyright p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #fefefe;
+
+  background-color: #849d8f;
 }
 
-.breadcrumbs-link {
+.footer-copyright p > a {
+  color: #fefefe;
+
+  background-color: #849d8f;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* breadcrambs */
+
+.breadcrumbs {
+  list-style: none;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -254,33 +363,10 @@ a {
 }
 
 .breadcrumbs-current {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #ffffff;
   border-bottom-style: none;
-
-  background-color: #849d8f;
 }
 
-.catalog-item-price {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 700;
-  color: #ffffff;
-
-  background-color: #849d8f;
-}
-
-.catalog-item-currency {
-  font-size: 45px;
-}
-
-.catalog-item-unit {
-  font-size: 30px;
-}
-
-/* всплывающие окна и попапы еще не размечаем */
+/* попапы/модальные окна еще не размечаем */
 .popup,
 .modal {
   display: none;
