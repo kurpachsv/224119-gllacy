@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
 
-  font-family: "Roboco", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -131,6 +131,7 @@ a {
 .catalog-item-title {
   font-size: 16px;
   line-height: 22px;
+  font-weight: 500;
   color: #ffffff;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -172,14 +173,11 @@ a {
 }
 
 .menu-link:hover {
-  color: #323232;
-
   background-color: #ededed;
 }
+
 .menu-link:focus,
 .menu-link:active {
-  color: #323232;
-
   background-color: #ededed;
 }
 
@@ -189,7 +187,7 @@ a {
   background-color: #d07058;
 }
 
-.submenu-link{
+.submenu-link {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -199,21 +197,15 @@ a {
 }
 
 .submenu-link:hover {
-  color: #323232;
-
   background-color: #fbded7;
 }
 
 .submenu-link:focus,
 .submenu-link:active {
-  color: #323232;
-
   background-color: #f6b5a5;
 }
 
 .submenu-link.active {
-  color: #323232;
-
   background-color: #d07058;
 }
 
@@ -247,7 +239,7 @@ a {
   background-color: #89a193
 }
 
-/* блок примуществ */
+/* блок преимуществ */
 
 .features {
   color: #323232;
