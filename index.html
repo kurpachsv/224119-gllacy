@@ -10,59 +10,59 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
-        </a>
-        <ul class="site-menu">
-          <li class="site-menu-item">
-            <a class="menu-link" href="catalog.html">Каталог</a>
-            <ul class="popup site-submenu">
-              <li class="site-submenu-item"><a class="submenu-link" href="#">Новинки</a></li>
-              <li class="site-submenu-item"><a class="submenu-link" href="#">Сливочное</a></li>
-              <li class="site-submenu-item"><a class="submenu-link active" href="#">Щербеты</a></li>
-              <li class="site-submenu-item"><a class="submenu-link" href="#">Фруктовый лед</a></li>
-              <li class="site-submenu-item"><a class="submenu-link" href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li class="site-menu-item"><a class="menu-link" href="#">Доставка и оплата</a></li>
-          <li class="site-menu-item"><a class="menu-link" href="#">О Компании</a></li>
-        </ul>
-        <div class="user-navigation-wrapper">
-          <div class="site-search">
-            <a class="search-link" href="#"><span class="visually-hidden">Поиск по сайту</span></a>
-            <form class="popup search-form" action="https://echo.htmlacademy.ru" method="GET">
-              <label class="visually-hidden" for="search">Поисковая фраза</label>
-              <input id="search" type="search" name="search-query" placeholder="Что ищем?">
-              <button class="visually-hidden" type="submit">Найти</button>
-            </form>
-          </div>
-          <ul class="user-navigation">
-            <li class="login-item"><a class="login-link" href="#">Вход</a>
-              <form class="popup login-form" action="https://echo.htmlacademy.ru" method="POST">
-                <p class="login-form-field">
-                  <label class="visually-hidden" for="user-email">Электронная почта</label>
-                  <input id="user-email" type="text" name="email" placeholder="Электронная почта">
-                </p>
-                <p class="login-form-field">
-                  <label class="visually-hidden" for="user-password">Пароль</label>
-                  <input id="user-password" type="password" name="password" placeholder="Пароль">
-                </p>
-                <a class="link login-form-link" href="#">Забыли пароль?</a>
-                <a class="link login-form-link" href="#">Новая регистрация</a>
-                <button class="button" type="submit">Войти</button>
-              </form>
-            </li>
+  <header class="container main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
+      </a>
+      <ul class="site-menu">
+        <li class="site-menu-item">
+          <a class="menu-link" href="catalog.html">Каталог</a>
+          <ul class="popup site-submenu">
+            <li class="site-submenu-item"><a class="submenu-link" href="#">Новинки</a></li>
+            <li class="site-submenu-item"><a class="submenu-link" href="#">Сливочное</a></li>
+            <li class="site-submenu-item"><a class="submenu-link active" href="#">Щербеты</a></li>
+            <li class="site-submenu-item"><a class="submenu-link" href="#">Фруктовый лед</a></li>
+            <li class="site-submenu-item"><a class="submenu-link" href="#">Мелорин</a></li>
           </ul>
-          <div class="site-cart">
-            <a class="cart-empty" href="#">Пусто</a>
-          </div>
+        </li>
+        <li class="site-menu-item"><a class="menu-link" href="#">Доставка и оплата</a></li>
+        <li class="site-menu-item"><a class="menu-link" href="#">О Компании</a></li>
+      </ul>
+      <div class="user-navigation-wrapper">
+        <div class="site-search">
+          <a class="search-link" href="#"><span class="visually-hidden">Поиск по сайту</span></a>
+          <form class="popup search-form" action="https://echo.htmlacademy.ru" method="GET">
+            <label class="visually-hidden" for="search">Поисковая фраза</label>
+            <input id="search" type="search" name="search-query" placeholder="Что ищем?">
+            <button class="visually-hidden" type="submit">Найти</button>
+          </form>
         </div>
-      </nav>
-    </header>
-    <main>
+        <ul class="user-navigation">
+          <li class="login-item"><a class="login-link" href="#">Вход</a>
+            <form class="popup login-form" action="https://echo.htmlacademy.ru" method="POST">
+              <p class="login-form-field">
+                <label class="visually-hidden" for="user-email">Электронная почта</label>
+                <input id="user-email" type="text" name="email" placeholder="Электронная почта">
+              </p>
+              <p class="login-form-field">
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input id="user-password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <a class="link login-form-link" href="#">Забыли пароль?</a>
+              <a class="link login-form-link" href="#">Новая регистрация</a>
+              <button class="button" type="submit">Войти</button>
+            </form>
+          </li>
+        </ul>
+        <div class="site-cart">
+          <a class="cart-empty" href="#">Пусто</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
       <h1 class="visually-hidden">Магазин Глэйси</h1>
       <div class="index-top-content">
         <!-- блок, который еще не размечаем -->
@@ -110,40 +110,40 @@
           </form>
         </section>
       </div>
-      <section class="index-map">
-        <!-- блок, который еще не размечаем -->
-        <img src="img/index-map-bg.jpg" width="1250" height="430" alt="Карта проезда">
-      </section>
-    </main>
-    <footer class="main-footer">
-      <ul class="social-items">
-        <li><a class="social-button social-button-twitter" href="#">
-          <span class="visually-hidden">Наш Твиттер</span></a>
-        </li>
-        <li><a class="social-button social-button-inst" href="#">
-          <span class="visually-hidden">Наш Инстаграм</span></a>
-        </li>
-        <li><a class="social-button social-button-fb" href="#">
-          <span class="visually-hidden">Наш Фейсбук</span></a>
-        </li>
-        <li><a class="social-button social-button-vk" href="#">
-          <span class="visually-hidden">Мы во ВКонтакте</span></a>
-        </li>
-      </ul>
-      <ul class="info-items">
-        <li><a class="link for-vendors" href="#">Для поставщиков</a></li>
-        <li><a class="link" href="#">О производстве</a></li>
-        <li><a class="link" href="#">Наши документы</a></li>
-        <li><a class="link" href="#">Экологические стандарты</a></li>
-      </ul>
-      <section class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="footer-ha-logo" src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
-        </a>
-        <p>Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
-      </section>
-    </footer>
-  </div>
+    </div>
+    <section class="index-map">
+      <!-- блок, который еще не размечаем -->
+      <img src="img/index-map-bg.jpg" width="1250" height="430" alt="Карта проезда">
+    </section>
+  </main>
+  <footer class="container main-footer">
+    <ul class="social-items">
+      <li><a class="social-button social-button-twitter" href="#">
+        <span class="visually-hidden">Наш Твиттер</span></a>
+      </li>
+      <li><a class="social-button social-button-inst" href="#">
+        <span class="visually-hidden">Наш Инстаграм</span></a>
+      </li>
+      <li><a class="social-button social-button-fb" href="#">
+        <span class="visually-hidden">Наш Фейсбук</span></a>
+      </li>
+      <li><a class="social-button social-button-vk" href="#">
+        <span class="visually-hidden">Мы во ВКонтакте</span></a>
+      </li>
+    </ul>
+    <ul class="info-items">
+      <li><a class="link for-vendors" href="#">Для поставщиков</a></li>
+      <li><a class="link" href="#">О производстве</a></li>
+      <li><a class="link" href="#">Наши документы</a></li>
+      <li><a class="link" href="#">Экологические стандарты</a></li>
+    </ul>
+    <section class="footer-copyright">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="footer-ha-logo" src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+      </a>
+      <p>Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
+    </section>
+  </footer>
   <section class="modal modal-callback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="callback-form" action="https://echo.htmlacademy.ru" method="POST">

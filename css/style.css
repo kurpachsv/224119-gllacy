@@ -25,7 +25,9 @@ a {
 }
 
 .container {
-  width: 1144px;
+  width: 1200px;
+  padding-left: 27px;
+  padding-right: 27px;
   margin: 0 auto;
 }
 
@@ -419,7 +421,7 @@ a {
   width: 1250px;
   height: 430px;
 
-  margin-left: -54px;
+  margin: 0 auto;
 }
 
 /* футер */
