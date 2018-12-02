@@ -24,6 +24,11 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1144px;
+  margin: 0 auto;
+}
+
 /* ссылки */
 
 .link {
@@ -157,9 +162,32 @@ a {
   color: #ffffff;
 }
 
+/* хедер */
+
+.main-navigation {
+  display: flex;
+
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.main-header-logo {
+  width: 154px;
+  height: 64px;
+}
+
 /* главное меню */
 
+.site-menu {
+  width: 397px;
+
+  margin-left: 10px;
+}
+
 .main-navigation ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -167,17 +195,23 @@ a {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  color: #323232;
+  color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   background-color: #849d8f;
 }
 
 .menu-link:hover {
+  color: #323232;
+
   background-color: #ededed;
 }
 
 .menu-link:focus,
 .menu-link:active {
+  color: #323232;
+
   background-color: #ededed;
 }
 
@@ -209,6 +243,19 @@ a {
   background-color: #d07058;
 }
 
+.user-navigation-wrapper {
+  width: 267px;
+  margin-left: auto;
+}
+
+.site-search {
+  width: 33px;
+}
+
+.user-navigation {
+  width: 93px;
+}
+
 .login-link {
   font-size: 14px;
   line-height: 16px;
@@ -221,6 +268,10 @@ a {
   color: #323232;
 
   background-color: #f8f7f4
+}
+
+.site-cart {
+  width: 100px;
 }
 
 .cart-link {
@@ -239,9 +290,14 @@ a {
   background-color: #89a193
 }
 
+/* основной контент */
+
 /* блок преимуществ */
 
 .features {
+  margin-bottom: 35px;
+  padding: 20px;
+
   color: #323232;
 
   background-color: #eee2cc
@@ -263,9 +319,19 @@ a {
   font-weight: 400;
 }
 
+.index-bottom-content {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
 /* анонс в блоге */
 
 .blog-post-announcement {
+  width: 560px;
+  padding: 20px;
+
   color: #323232;
 
   background-color: #ffffff;
@@ -288,6 +354,9 @@ a {
 /* подписка */
 
 .subscribe {
+  width: 560px;
+  padding: 20px;
+
   color: #5a5a5a;
 
   background-color: #f8f7f4;
@@ -309,10 +378,36 @@ a {
   background-color: #ffffff;
 }
 
+.index-map {
+  width: 1250px;
+  height: 430px;
+
+  margin-left: -54px;
+}
+
 /* футер */
 
-.social-items,
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 35px;
+}
+
+.social-items {
+  display: flex;
+  width: 200px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .info-items {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -323,6 +418,10 @@ a {
   color: #ffffff;
 
   background-color: #849d8f;
+}
+
+.footer-copyright {
+  width: 189px;
 }
 
 .for-vendors.link {
