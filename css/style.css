@@ -335,7 +335,6 @@ input[type="radio"].visually-hidden {
   width: auto;
   margin-top: 13px;
   margin-left: auto;
-  padding-left: 22px;
 }
 
 .site-search {
@@ -494,28 +493,131 @@ input[type="radio"].visually-hidden {
 /* блок преимуществ */
 
 .features {
-  margin-bottom: 35px;
-  padding: 20px;
+  margin-bottom: 40px;
+  padding: 4px 20px;
 
   color: #323232;
 
-  background-color: #eee2cc
+  background-color: #eee2cc;
+
+  border-radius: 16px;
+
+  background-image: url("../img/features-bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .features h2 {
+  margin: 0;
+  margin-top: 20px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
 }
 
+.features-item:nth-child(2n) {
+  width: 538px;
+
+  padding-left: 59px;
+}
+
+.features-item:nth-child(2n - 1) {
+  margin-right: 20px;
+}
+
 .features-items {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+  margin-top: 22px;
+
   list-style: none;
 }
 
 .features-item {
+  width: 544px;
+
+  padding-left: 56px;
+  margin-bottom: 22px;
+
+  position: relative;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+}
+
+.ice-cream-icon::before {
+  content: "";
+
+  position: absolute;
+
+  top: -13px;
+  left: 0;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/ice-cream.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.cow-icon::before {
+  content: "";
+
+  position: absolute;
+
+  top: -13px;
+  left: 0;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/cow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.eco-icon::before {
+  content: "";
+
+  position: absolute;
+
+  top: -13px;
+  left: 0;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/eco.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.temperature-icon::before {
+  content: "";
+
+  position: absolute;
+
+  top: -13px;
+  left: 0;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/thermometer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.index-top-content {
+  min-height: 1150px;
+
+  margin-bottom: 45px;
 }
 
 .index-bottom-content {
@@ -528,21 +630,39 @@ input[type="radio"].visually-hidden {
 /* анонс в блоге */
 
 .blog-post-announcement {
+  min-height: 220px;
+
   width: 560px;
+
   padding: 20px;
+  padding-top: 10px;
 
   color: #323232;
 
   background-color: #ffffff;
+
+  border-radius: 16px;
+
+  background-image: url("../img/strawberry-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .blog-post-announcement h2 {
+  margin: 0;
+  margin-top: 13px;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
 }
 
 .blog-post-announcement a {
+  display: block;
+  margin-top: 4px;
+
+  width: 315px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -554,27 +674,64 @@ input[type="radio"].visually-hidden {
 
 .subscribe {
   width: 560px;
-  padding: 20px;
 
+  padding: 6px;
+
+  border-radius: 16px;
+
+  background-image: url("../img/subscribe-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.subscribe-content {
+  height: 100%;
+  padding: 20px;
+  
   color: #5a5a5a;
 
   background-color: #f8f7f4;
+
+  border-radius: 16px;
 }
 
 .subscribe p {
+  margin: 0;
+  margin-top: 7px;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
 }
 
+.subscribe-form {
+  margin-top: 36px;
+}
+
 .subscribe input {
+  width: 368px;
+
+  padding-left: 14px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #999999;
 
   border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+
   background-color: #ffffff;
+}
+
+.subscribe button {
+  width: 129px;
+
+  line-height: 24px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .index-map {
