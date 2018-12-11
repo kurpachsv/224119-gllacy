@@ -16,14 +16,14 @@
         <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
       </a>
       <ul class="site-menu">
-        <li class="site-menu-item catalog-link">
-          <a class="menu-link active" href="catalog.html"><span>Каталог</span></a>
-          <ul class="popup site-submenu">
-            <li class="site-submenu-item"><a class="submenu-link" href="#">Новинки</a></li>
+        <li class="site-menu-item">
+          <a class="menu-link catalog-link active" href="catalog.html"><span>Каталог</span></a>
+          <ul class="site-submenu">
+            <li class="site-submenu-item first-submenu-item"><a class="submenu-link" href="#">Новинки</a></li>
             <li class="site-submenu-item"><a class="submenu-link" href="#">Сливочное</a></li>
             <li class="site-submenu-item"><a class="submenu-link active" href="#">Щербеты</a></li>
             <li class="site-submenu-item"><a class="submenu-link" href="#">Фруктовый лед</a></li>
-            <li class="site-submenu-item"><a class="submenu-link" href="#">Мелорин</a></li>
+            <li class="site-submenu-item last-submenu-item"><a class="submenu-link" href="#">Мелорин</a></li>
           </ul>
         </li>
         <li class="site-menu-item payment-link"><a class="menu-link" href="#"><span>Доставка и оплата</span></a></li>
@@ -64,7 +64,7 @@
               </svg>
               Вход
             </a>
-            <form class="popup login-form" action="https://echo.htmlacademy.ru" method="POST">
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
               <p class="login-form-field">
                 <label class="visually-hidden" for="user-email">Электронная почта</label>
                 <input id="user-email" type="text" name="email" placeholder="Электронная почта">
@@ -73,63 +73,75 @@
                 <label class="visually-hidden" for="user-password">Пароль</label>
                 <input id="user-password" type="password" name="password" placeholder="Пароль">
               </p>
-              <a class="link login-form-link" href="#">Забыли пароль?</a>
-              <a class="link login-form-link" href="#">Новая регистрация</a>
-              <button class="button" type="submit">Войти</button>
+              <div class="login-wrapper">
+                <div class="login-link-wrapper">
+                  <a class="link login-form-link" href="#">Забыли пароль?</a>
+                  <a class="link login-form-link" href="#">Новая регистрация</a>
+                </div>
+                <button class="button login-button" type="submit">Войти</button>
+              </div>
             </form>
           </li>
         </ul>
         <div class="site-cart">
           <a class="cart-link" href="#">2 товара</a>
-          <div class="popup">
+          <div class="cart-wrapper">
             <ul class="cart-items">
               <li class="cart-item">
                 <button class="cart-item-remove">
                   <span class="visually-hidden">Удалить</span>
                 </button>
-                <a href="#">
+                <a class="cart-item-link" href="#">
                   <img class="cart-item-thumbnail" src="img/product-thumb-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                   <span class="cart-item-title">Пломбир с апельсиновым джемом</span>
                 </a>
-                <b class="cart-item-count">
+                <span class="cart-item-count">
                   1,5
                   <span class="cart-item-unit">кг</span>
-                  <span class="cart-item-price">200</span>
-                </b>
-                <b class="cart-item-total-price">
+                  x
+                  <span class="cart-item-price">
+                    200
+                     <span class="cart-item-currency">руб.</span>
+                  </span>
+                </span>
+                <span class="cart-item-total-price">
                   300
-                  <span class="cart-item-currency">руб</span>
-                </b>
+                  <span class="cart-item-currency">руб.</span>
+                </span>
               </li>
               <li class="cart-item">
                 <button class="cart-item-remove">
                     <span class="visually-hidden">Удалить</span>
                   </button>
-                  <a href="#">
+                  <a class="cart-item-link" href="#">
                     <img class="cart-item-thumbnail" src="img/product-thumb-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                     <span class="cart-item-title">Клубничный пломбир с присыпкой из белого шоколада</span>
                   </a>
-                  <b class="cart-item-count">
+                  <span class="cart-item-count">
                     1,5
                     <span class="cart-item-unit">кг</span>
-                    <span class="cart-item-price">300</span>
-                  </b>
-                  <b class="cart-item-total-price">
+                    x
+                    <span class="cart-item-price">
+                      300
+                       <span class="cart-item-currency">руб.</span>
+                    </span>
+                  </span>
+                  <span class="cart-item-total-price">
                     450
-                    <span class="cart-item-currency">руб</span>
-                  </b>
+                    <span class="cart-item-currency">руб.</span>
+                  </span>
               </li>
             </ul>
-            <div class="cart-items-total">
-              <b>
+            <div class="cart-total-wrapper">
+              <div class="cart-items-total">
                 Итого:
                 <span class="cart-items-total-price">
                   750
-                  <span class="cart-items-currency">руб</span>
+                  <span class="cart-items-currency">руб.</span>
                 </span>
-              </b>
+              </div>
+              <a class="button checkout-button" href="#">Оформить заказ</a>
             </div>
-            <a class="button" href="#">Оформить заказ</a>
           </div>
         </div>
       </div>
@@ -285,7 +297,7 @@
     </ul>
     <section class="footer-copyright">
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img class="footer-ha-logo" src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+        <img class="footer-ha-logo" src="img/logo-htmlacademy.svg" width="108" height="36" alt="Логотип HTML Academy">
       </a>
       <p>Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
     </section>

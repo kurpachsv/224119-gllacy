@@ -16,14 +16,14 @@
         <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
       </a>
       <ul class="site-menu">
-        <li class="site-menu-item catalog-link">
-          <a class="menu-link" href="catalog.html"><span>Каталог</span></a>
-          <ul class="popup site-submenu">
-            <li class="site-submenu-item"><a class="submenu-link" href="#">Новинки</a></li>
+        <li class="site-menu-item">
+          <a class="menu-link catalog-link" href="catalog.html"><span>Каталог</span></a>
+          <ul class="site-submenu">
+            <li class="site-submenu-item first-submenu-item"><a class="submenu-link" href="#">Новинки</a></li>
             <li class="site-submenu-item"><a class="submenu-link" href="#">Сливочное</a></li>
             <li class="site-submenu-item"><a class="submenu-link active" href="#">Щербеты</a></li>
             <li class="site-submenu-item"><a class="submenu-link" href="#">Фруктовый лед</a></li>
-            <li class="site-submenu-item"><a class="submenu-link" href="#">Мелорин</a></li>
+            <li class="site-submenu-item last-submenu-item"><a class="submenu-link" href="#">Мелорин</a></li>
           </ul>
         </li>
         <li class="site-menu-item payment-link"><a class="menu-link" href="#"><span>Доставка и оплата</span></a></li>
@@ -64,7 +64,7 @@
               </svg>
               Вход
             </a>
-            <form class="popup login-form" action="https://echo.htmlacademy.ru" method="POST">
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
               <p class="login-form-field">
                 <label class="visually-hidden" for="user-email">Электронная почта</label>
                 <input id="user-email" type="text" name="email" placeholder="Электронная почта">
@@ -73,9 +73,13 @@
                 <label class="visually-hidden" for="user-password">Пароль</label>
                 <input id="user-password" type="password" name="password" placeholder="Пароль">
               </p>
-              <a class="link login-form-link" href="#">Забыли пароль?</a>
-              <a class="link login-form-link" href="#">Новая регистрация</a>
-              <button class="button" type="submit">Войти</button>
+              <div class="login-wrapper">
+                <div class="login-link-wrapper">
+                  <a class="link login-form-link" href="#">Забыли пароль?</a>
+                  <a class="link login-form-link" href="#">Новая регистрация</a>
+                </div>
+                <button class="button login-button" type="submit">Войти</button>
+              </div>
             </form>
           </li>
         </ul>
@@ -165,7 +169,7 @@
     </ul>
     <section class="footer-copyright">
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img class="footer-ha-logo" src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+        <img class="footer-ha-logo" src="img/logo-htmlacademy.svg" width="108" height="36" alt="Логотип HTML Academy">
       </a>
       <p>Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
     </section>
