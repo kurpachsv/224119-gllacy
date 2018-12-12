@@ -105,6 +105,8 @@ input[type="radio"].visually-hidden {
 .button {
   font: inherit;
 
+  height: 65px;
+
   text-align: center;
   font-size: 32px;
   line-height: 44px;
@@ -112,23 +114,37 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   vertical-align: middle;
 
-  background-color: #e94f37;
+  border: none;
+  border-radius: 50px;
+
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+
+  cursor: pointer;
 }
 
-.button:focus {
+.button:hover {
   color: #ffffff;
 
-  background-color: #ee7360;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  box-shadow: 0 2px 2px #ac1000;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
 }
 
+.button:focus,
 .button:active {
   color: #ffffff;
 
-  background-color: #de5a3b;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  box-shadow: inset 0 2px 2px #942718;
+  background-color: rgba(0, 0, 0, 0.07);
 }
 
 .button-bg {
   font: inherit;
+
+  height: 46px;
 
   text-align: center;
   font-size: 18px;
@@ -137,19 +153,29 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   vertical-align: middle;
 
-  background-color: #b93542;
+
+  border: none;
+  border-radius: 50px;
+
+  box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+
+  cursor: pointer;
 }
 
-.button-bg:focus {
+.button-bg:hover {
   color: #fefefe;
 
-  background-color: #de593b;
+  box-shadow: 0 1px 2px #ac1000;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
 }
 
+.button-bg:focus,
 .button-bg:active {
   color: #fceeec;
 
-  background-color: #b93542;
+  box-shadow: inset 0 2px 2px #942718;
+  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
 }
 
 /* карточка товара */
@@ -247,7 +273,7 @@ input[type="radio"].visually-hidden {
   width: auto;
 
   margin-top: 13px;
-  margin-left: 7px;
+  margin-left: 4px;
 }
 
 .main-navigation ul {
@@ -259,7 +285,10 @@ input[type="radio"].visually-hidden {
 
 .menu-link {
   display: block;
-  padding: 8px 15px;
+
+  height: 32px;
+
+  padding: 7px 15px;
 
   font-size: 16px;
   line-height: 18px;
@@ -277,6 +306,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-link {
   width: 87px;
+
+  margin-left: 5px;
 }
 
 .menu-link span {
@@ -314,38 +345,49 @@ input[type="radio"].visually-hidden {
   background-color: #d07058;
 }
 
+.site-submenu-item {
+  background-color: #f8f7f4;
+}
+
 .main-navigation .site-submenu {
   display: none;
 
   position: absolute;
-  margin-top: 5px;
+
+  margin-left: 3px;
+  margin-top: 6px;
 
   left: 0;
 
   width: 143px;
 
+  border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .first-submenu-item .submenu-link {
   font-weight: 700;
 
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  margin-top: 5px;
 }
 
 .last-submenu-item .submenu-link {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  margin-top: 2px;
+  margin-bottom: 7px;
 }
 
-.first-submenu-item::after {
+.first-submenu-item + li .submenu-link {
+  margin-top: 9px;
+}
+
+.first-submenu-item ::after {
   content: "";
 
   position: absolute;
 
+  top: 39px;
   left: 5px;
-  right: 5px;
+  right: 10px;
 
   height: 1px;
 
@@ -353,12 +395,25 @@ input[type="radio"].visually-hidden {
   border-bottom: 1px solid #000000;
 }
 
+.first-submenu-item {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.last-submenu-item {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 .submenu-link {
-  display: block;
+  display: inline-block;
+
+  width: 143px;
 
   padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  margin-top: 4px;
 
   font-size: 14px;
   line-height: 16px;
@@ -383,11 +438,11 @@ input[type="radio"].visually-hidden {
 
 .user-navigation-wrapper {
   display: flex;
-  flex-wrap: wrap;
 
-  width: auto;
+  width: 243px;
   margin-top: 13px;
   margin-left: auto;
+  margin-right: 2px;
 }
 
 .site-search {
@@ -396,7 +451,7 @@ input[type="radio"].visually-hidden {
   width: 33px;
   height: 33px;
 
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .search-form {
@@ -492,7 +547,6 @@ input[type="radio"].visually-hidden {
 
 .main-navigation .user-navigation {
   width: 93px;
-  margin-right: 10px;
 }
 
 .login-link {
@@ -500,7 +554,7 @@ input[type="radio"].visually-hidden {
 
   display: block;
   padding: 8px 15px;
-  padding-left: 42px;
+  padding-left: 47px;
 
   font-size: 14px;
   line-height: 16px;
@@ -535,6 +589,7 @@ input[type="radio"].visually-hidden {
 .login-item {
   position: relative;
 
+  width: 93px;
   height: 32px;
 }
 
@@ -556,7 +611,7 @@ input[type="radio"].visually-hidden {
 
   width: 277px;
 
-  padding: 15px 13px;
+  padding: 15px 20px;
 
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -607,12 +662,13 @@ input[type="radio"].visually-hidden {
 .login-button {
   order: 1;
 
+  width: 100px;
+  height: 45px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   color: #fefefe;
-
-  margin-right: 20px;
 }
 
 .login-link-wrapper {
@@ -697,6 +753,8 @@ input[type="radio"].visually-hidden {
 .site-cart {
   position: relative;
 
+  margin-left: 12px;
+
   width: 117px;
   height: 32px;
 }
@@ -719,7 +777,7 @@ input[type="radio"].visually-hidden {
 
   width: 539px;
 
-  padding: 15px 13px;
+  padding: 15px 20px;
 
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -855,6 +913,12 @@ input[type="radio"].visually-hidden {
 
 .checkout-button {
   display: block;
+
+  height: 45px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 13px;
 
   font-size: 18px;
   line-height: 24px;
@@ -1062,7 +1126,7 @@ input[type="radio"].visually-hidden {
 
 .subscribe-content {
   height: 100%;
-  padding: 20px;
+  padding: 15px;
   
   color: #5a5a5a;
 
@@ -1103,7 +1167,10 @@ input[type="radio"].visually-hidden {
 }
 
 .subscribe button {
+  margin-left: 12px;
+
   width: 129px;
+  height: 44px;
 
   line-height: 24px;
   font-weight: 700;
