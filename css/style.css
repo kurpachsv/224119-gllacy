@@ -366,9 +366,10 @@ input[type="radio"].visually-hidden {
 }
 
 .first-submenu-item .submenu-link {
-  font-weight: 700;
-
+  position: relative;
   margin-top: 5px;
+
+  font-weight: 700;
 }
 
 .last-submenu-item .submenu-link {
@@ -385,7 +386,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
 
-  top: 39px;
+  top: 32px;
   left: 5px;
   right: 10px;
 
@@ -439,10 +440,8 @@ input[type="radio"].visually-hidden {
 .user-navigation-wrapper {
   display: flex;
 
-  width: 243px;
   margin-top: 13px;
   margin-left: auto;
-  margin-right: 2px;
 }
 
 .site-search {
@@ -451,7 +450,7 @@ input[type="radio"].visually-hidden {
   width: 33px;
   height: 33px;
 
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .search-form {
@@ -642,16 +641,26 @@ input[type="radio"].visually-hidden {
 }
 
 .login-form-link {
+  display: block;
+
+  text-decoration: underline;
+
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
 
   color: #323232;
 
+  border: transparent;
   background-color: #f8f7f4;
 }
 
 .login-form-link:hover {
+  background-color: #f8f7f4;
+}
+
+.login-form-link:active,
+.login-form-link:focus {
   background-color: #f8f7f4;
 }
 
@@ -678,10 +687,6 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
 
   margin-left: auto;
-}
-
-.site-cart {
-  width: 100px;
 }
 
 .cart-link {
@@ -724,7 +729,7 @@ input[type="radio"].visually-hidden {
   display: block;
 
   padding: 8px 15px;
-  padding-left: 42px;
+  padding-left: 45px;
 
   font-size: 14px;
   line-height: 16px;
@@ -755,7 +760,6 @@ input[type="radio"].visually-hidden {
 
   margin-left: 12px;
 
-  width: 117px;
   height: 32px;
 }
 
@@ -1075,7 +1079,7 @@ input[type="radio"].visually-hidden {
   width: 560px;
 
   padding: 20px;
-  padding-top: 10px;
+  padding-top: 12px;
 
   color: #323232;
 
@@ -1137,7 +1141,8 @@ input[type="radio"].visually-hidden {
 
 .subscribe p {
   margin: 0;
-  margin-top: 7px;
+  margin-left: 5px;
+  margin-top: 13px;
 
   font-size: 16px;
   line-height: 22px;
@@ -1145,7 +1150,8 @@ input[type="radio"].visually-hidden {
 }
 
 .subscribe-form {
-  margin-top: 36px;
+  margin-top: 38px;
+  margin-left: 5px;
 }
 
 .subscribe input {
@@ -1153,7 +1159,7 @@ input[type="radio"].visually-hidden {
 
   padding-left: 14px;
   padding-top: 8px;
-  padding-bottom: 7px;
+  padding-bottom: 11px;
 
   font-size: 16px;
   line-height: 24px;
@@ -1167,7 +1173,7 @@ input[type="radio"].visually-hidden {
 }
 
 .subscribe button {
-  margin-left: 12px;
+  margin-left: 8px;
 
   width: 129px;
   height: 44px;
@@ -1190,7 +1196,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 
-  margin-top: 18px;
+  margin-top: 19px;
   margin-bottom: 30px;
 }
 
@@ -1250,7 +1256,7 @@ input[type="radio"].visually-hidden {
 
   padding: 0;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 13px;
   margin-left: 50px;
 
   position: relative;
