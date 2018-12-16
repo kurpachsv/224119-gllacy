@@ -103,8 +103,6 @@ input[type="radio"].visually-hidden {
 .button {
   font: inherit;
 
-  height: 65px;
-
   text-align: center;
   font-size: 32px;
   line-height: 44px;
@@ -141,8 +139,6 @@ input[type="radio"].visually-hidden {
 
 .button-bg {
   font: inherit;
-
-  height: 46px;
 
   text-align: center;
   font-size: 18px;
@@ -550,19 +546,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form input[type="search"] {
-  width: 100%;
-
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #999999;
-
-  padding: 7px;
-
-  border-radius: 5px;
-  border: 1px solid #d3d3d2;
-
-  background-color: #ffffff;
+  width: 300px;
 }
 
 .site-search:hover {
@@ -699,25 +683,12 @@ input[type="radio"].visually-hidden {
 
 .login-form-field {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
-  width: 100%;
-
-  margin-bottom: 20px;
-
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #999999;
-
-  padding: 7px;
-
-  border-radius: 5px;
-  border: 1px solid #d3d3d2;
-
-  background-color: #ffffff;
+  width: 220px;
 }
 
 .login-form-link {
@@ -945,8 +916,10 @@ input[type="radio"].visually-hidden {
   width: 11px;
   height: 11px;
 
-  border: none;
+  font-size: 0;
+
   background-color: transparent;
+  border: 0;
 
   cursor: pointer;
 }
@@ -1210,7 +1183,7 @@ input[type="radio"].visually-hidden {
 }
 
 .subscribe input {
-  width: 368px;
+  width: 352px;
 
   padding-left: 14px;
   padding-top: 8px;
@@ -1239,6 +1212,8 @@ input[type="radio"].visually-hidden {
 }
 
 .index-map {
+  position: relative;
+
   margin: 0 auto;
 
   width: 1250px;
@@ -1247,6 +1222,59 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/index-map-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.index-map-legend {
+  position: absolute;
+
+  top: 63px;
+  right: 50px;
+
+  width: 302px;
+  padding: 30px 25px;
+
+  border-radius: 10px;
+
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.index-map-legend p {
+  display: block;
+
+  margin: 0;
+  margin-bottom: 17px;
+  margin-left: -2px;
+  padding: 0;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.index-map-legend b {
+  display: inline-block;
+
+  margin: 0;
+  padding-top: 3px;
+
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.legend-button {
+  display: block;
+
+  width: 252px;
+
+  padding: 10px;
+  margin-top: 25px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+  color: #fefefe;
 }
 
 .inner-page {
@@ -1494,7 +1522,160 @@ input[type="radio"].visually-hidden {
   min-height: 100px;
 }
 
-/* модальные окна еще не размечаем */
+/* модальное окно */
+
 .modal {
-  display: none;
+  position: fixed;
+
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.modal-callback {
+  top: 120px;
+  left: 50%;
+
+  width: 478px;
+
+  margin-left: -230px;
+  padding: 20px;
+  padding-left: 24px;
+
+  border-radius: 10px;
+}
+
+.modal-callback p {
+  padding: 0;
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.modal-close {
+  position: absolute;
+
+  top: 16px;
+  right: 17px;
+
+  width: 18px;
+  height: 18px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+
+  left: -2px;
+
+  width: 23px;
+  height: 2px;
+
+  background-color: #231f20;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-callback .callback-form-field {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.callback-name,
+.callback-email {
+  width: 254px;
+}
+
+.callback-form-field .callback-message {
+  min-width: 410px;
+  max-width: 410px;
+  min-height: 155px;
+}
+
+.callback-button {
+  width: 139px;
+
+  padding: 10px;
+  margin-left: auto;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.callback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* поле ввода */
+
+.input {
+  box-sizing: content-box;
+
+  font: inherit;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 2px;
+  padding-left: 11px;
+
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: #323232;
+}
+
+.input:hover {
+  margin: 1px;
+
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.input:focus {
+  margin: 1px;
+
+  border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.input::-webkit-input-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.input::-moz-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.input:-moz-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.input:-ms-input-placeholder {
+  color: #999999;
+  font-weight: 400;
 }

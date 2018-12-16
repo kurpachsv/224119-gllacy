@@ -44,7 +44,7 @@
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
             <label class="visually-hidden" for="search">Поисковая фраза</label>
-            <input id="search" type="search" name="search-query" placeholder="Что ищем?">
+            <input class="input" id="search" type="search" name="search-query" placeholder="Что ищем?">
             <button class="visually-hidden" type="submit">Найти</button>
           </form>
         </div>
@@ -67,11 +67,11 @@
             <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
               <p class="login-form-field">
                 <label class="visually-hidden" for="user-email">Электронная почта</label>
-                <input id="user-email" type="text" name="email" placeholder="Электронная почта">
+                <input class="input" id="user-email" type="text" name="email" placeholder="Электронная почта">
               </p>
               <p class="login-form-field">
                 <label class="visually-hidden" for="user-password">Пароль</label>
-                <input id="user-password" type="password" name="password" placeholder="Пароль">
+                <input class="input" id="user-password" type="password" name="password" placeholder="Пароль">
               </p>
               <div class="login-wrapper">
                 <div class="login-link-wrapper">
@@ -134,7 +134,7 @@
               и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
               <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
-              <input id="subscribe-email" type="text" name="email" placeholder="Электронная почта">
+              <input class="input" id="subscribe-email" type="text" name="email" placeholder="Электронная почта">
               <button class="button" type="submit">Отправить</button>
             </form>
           </div>
@@ -142,7 +142,19 @@
       </div>
     </div>
     <section class="index-map">
-      <!-- блок, который еще не размечаем -->
+      <div class="index-map-legend">
+        <p>
+          Адрес главного офиса<br>
+          и офлайн магазина:<br>
+          <b>ул. Большая Конюшеная 19/8, Санкт-Петербург</b><br>
+        </p>
+        <p>
+          Для заказов по телефону:<br>
+          <b>8 812 450-25-25</b><br>
+          (с 10 до 20 ежедневно)
+        </p>
+        <a href="#" class="button legend-button">Форма обратной связи</a>
+      </div>
     </section>
   </main>
   <footer class="container main-footer">
@@ -184,24 +196,26 @@
   <section class="modal modal-callback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="callback-form" action="https://echo.htmlacademy.ru" method="POST">
-      <button class="callback-form-close">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-      <b>Мы обязательно вам ответим!</b>
-      <p class="callback-form-field">
-        <label class="visually-hidden" for="callback-name">Имя</label>
-        <input id="callback-name" type="text" name="name" placeholder="Как вас зовут?">
-      </p>
-      <p class="callback-form-field">
-        <label class="visually-hidden" for="callback-email">Электронная почта</label>
-        <input id="callback-email" type="text" name="email" placeholder="Ваша почта для ответа?">
-      </p>
-      <p class="callback-form-field">
-        <label class="visually-hidden" for="callback-message">Сообщение</label>
-        <textarea id="callback-message" name="message" placeholder="Напишете что-нибудь..."></textarea>
-      </p>
-      <button class="button" type="submit">Отправить</button>
+      <div class="callback-content">
+        <p>Мы обязательно вам ответим!</p>
+        <p class="callback-form-field">
+          <label class="visually-hidden" for="callback-name">Имя</label>
+          <input class="input callback-name" id="callback-name" type="text" name="name" placeholder="Как вас зовут?">
+        </p>
+        <p class="callback-form-field">
+          <label class="visually-hidden" for="callback-email">Электронная почта</label>
+          <input class="input callback-email" id="callback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p class="callback-form-field">
+          <label class="visually-hidden" for="callback-message">Сообщение</label>
+          <textarea class="input callback-message" id="callback-message" name="message" placeholder="Напишете что-нибудь..."></textarea>
+        </p>
+      </div>
+      <button class="button callback-button" type="submit">Отправить</button>
     </form>
+    <button class="modal-close">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
 </body>
 
