@@ -43,9 +43,11 @@
             <span class="visually-hidden">Поиск по сайту</span>
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-            <label class="visually-hidden" for="search">Поисковая фраза</label>
-            <input class="input" id="search" type="search" name="search-query" placeholder="Что ищем?">
-            <button class="visually-hidden" type="submit">Найти</button>
+            <div class="search-content">
+              <label class="visually-hidden" for="search">Поисковая фраза</label>
+              <input class="input" id="search" type="search" name="search-query" placeholder="Что ищем?">
+              <button class="visually-hidden" type="submit">Найти</button>
+            </div>
           </form>
         </div>
         <ul class="user-navigation">
@@ -65,20 +67,22 @@
               Вход
             </a>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-              <p class="login-form-field">
-                <label class="visually-hidden" for="user-email">Электронная почта</label>
-                <input class="input" id="user-email" type="text" name="email" placeholder="Электронная почта">
-              </p>
-              <p class="login-form-field">
-                <label class="visually-hidden" for="user-password">Пароль</label>
-                <input class="input" id="user-password" type="password" name="password" placeholder="Пароль">
-              </p>
-              <div class="login-wrapper">
-                <div class="login-link-wrapper">
-                  <a class="link-bg login-form-link" href="#"><span>Забыли пароль?</span></a>
-                  <a class="link-bg login-form-link" href="#"><span>Новая регистрация</span></a>
+              <div class="login-content">
+                <p class="login-form-field">
+                  <label class="visually-hidden" for="user-email">Электронная почта</label>
+                  <input class="input" id="user-email" type="text" name="email" placeholder="Электронная почта">
+                </p>
+                <p class="login-form-field">
+                  <label class="visually-hidden" for="user-password">Пароль</label>
+                  <input class="input" id="user-password" type="password" name="password" placeholder="Пароль">
+                </p>
+                <div class="login-wrapper">
+                  <div class="login-link-wrapper">
+                    <a class="link-bg login-form-link" href="#"><span>Забыли пароль?</span></a>
+                    <a class="link-bg login-form-link" href="#"><span>Новая регистрация</span></a>
+                  </div>
+                  <button class="button login-button" type="submit">Войти</button>
                 </div>
-                <button class="button login-button" type="submit">Войти</button>
               </div>
             </form>
           </li>

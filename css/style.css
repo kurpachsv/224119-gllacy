@@ -532,12 +532,12 @@ input[type="radio"].visually-hidden {
 .search-form {
   display: none;
 
+  width: 341px;
+
   position: absolute;
   right: 0;
 
   margin-top: 5px;
-
-  width: 345px;
   padding: 15px 13px;
 
   border-radius: 5px;
@@ -545,8 +545,13 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
 }
 
+.search-content {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
 .search-form input[type="search"] {
-  width: 300px;
+  width: 295px;
 }
 
 .site-search:hover {
@@ -682,14 +687,20 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
 }
 
+.login-content {
+  margin-top: 2px;
+  margin-left: -2px;
+  margin-bottom: 4px;
+}
+
 .login-form-field {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px
 }
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
-  width: 220px;
+  width: 225px
 }
 
 .login-form-link {
@@ -736,6 +747,8 @@ input[type="radio"].visually-hidden {
   order: 2;
 
   display: flex;
+  margin-top: -2px;
+
   flex-direction: column;
 
   margin-left: auto;
