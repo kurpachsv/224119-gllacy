@@ -20,6 +20,10 @@ body {
   background-color: #849d8f;
 }
 
+body.inner-page {
+  background: linear-gradient(to bottom, #9cb0a5, #849d8f);
+}
+
 a {
   text-decoration: none;
 }
@@ -62,8 +66,6 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
-  background-color: #849d8f;
 }
 
 .link:hover {
@@ -367,8 +369,6 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   border-radius: 16px;
-
-  background-color: #849d8f;
 }
 
 .site-menu-item {
@@ -576,7 +576,8 @@ input[type="radio"].visually-hidden {
 
   border-radius: 16px;
 
-  background-color: #9db1a6;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
 .search-link:hover {
@@ -623,9 +624,9 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
   color: #ffffff;
 
-  background-color: #9db1a6;
-
   border-radius: 16px;
+
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .login-icon {
@@ -1178,30 +1179,25 @@ input[type="radio"].visually-hidden {
 }
 
 .subscribe-form {
-  margin-top: 38px;
-  margin-left: 5px;
+  margin-top: 37px;
+  margin-left: 4px;
 }
 
 .subscribe input {
   width: 352px;
 
-  padding-left: 14px;
-  padding-top: 8px;
-  padding-bottom: 11px;
+  padding-top: 7px;
+  padding-bottom: 10px;
 
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
-  color: #999999;
-
-  border: 1px solid rgba(178, 178, 178, 0.52);
-  border-radius: 5px;
-
-  background-color: #ffffff;
+  line-height: 24px;
 }
 
 .subscribe button {
-  margin-left: 8px;
+  vertical-align: top;
+
+  margin-left: 5px;
 
   width: 129px;
   height: 44px;
@@ -1212,11 +1208,9 @@ input[type="radio"].visually-hidden {
 }
 
 .index-map {
-  position: relative;
-
   margin: 0 auto;
 
-  width: 1250px;
+  width: 1200px;
   height: 430px;
 
   background-image: url("../img/index-map-bg.jpg");
@@ -1224,27 +1218,30 @@ input[type="radio"].visually-hidden {
   background-position: center center;
 }
 
+.legend-wrapper {
+  position: relative;
+}
+
 .index-map-legend {
   position: absolute;
 
-  top: 63px;
-  right: 50px;
-
+  top: 62px;
+  right: 26px;
   width: 302px;
+
   padding: 30px 25px;
 
-  border-radius: 10px;
+  border-radius: 15px;
 
   color: #323232;
   background-color: #ffffff;
 }
 
-.index-map-legend p {
-  display: block;
-
+.legend-address,
+.legend-phone {
   margin: 0;
   margin-bottom: 17px;
-  margin-left: -2px;
+  margin-left: -1px;
   padding: 0;
 
   font-size: 14px;
@@ -1252,10 +1249,18 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
 }
 
-.index-map-legend b {
+.legend-address {
+  width: 150px;
+}
+
+.legend-address b,
+.legend-phone b {
   display: inline-block;
 
+  width: 250px;
+
   margin: 0;
+  padding: 0;
   padding-top: 3px;
 
   font-size: 18px;
@@ -1268,7 +1273,7 @@ input[type="radio"].visually-hidden {
   width: 252px;
 
   padding: 10px;
-  margin-top: 25px;
+  margin-top: 26px;
 
   font-size: 18px;
   font-weight: 700;
@@ -1277,7 +1282,7 @@ input[type="radio"].visually-hidden {
   color: #fefefe;
 }
 
-.inner-page {
+main.inner-page {
   display: flex;
   flex-direction: column;
 
@@ -1290,6 +1295,8 @@ input[type="radio"].visually-hidden {
 
 .inner-page .catalog {
   order: 4;
+
+  margin-bottom: 2px;
 }
 
 /* футер */
@@ -1400,8 +1407,6 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
-
-  background-color: #849d8f;
 }
 
 .for-vendors {
@@ -1439,8 +1444,6 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 400;
   color: #fefefe;
-
-  background-color: #849d8f;
 }
 
 .footer-copyright p > a {
@@ -1448,8 +1451,6 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 400;
   color: #fefefe;
-
-  background-color: #849d8f;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -1465,8 +1466,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-top: 23px;
   padding: 0;
-
-  background-color: #849d8f;
 }
 
 .inner-page h1 {
@@ -1519,7 +1518,7 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-bottom-content {
-  min-height: 100px;
+  min-height: 95px;
 }
 
 /* модальное окно */
@@ -1538,8 +1537,8 @@ input[type="radio"].visually-hidden {
 
   width: 478px;
 
-  margin-left: -230px;
-  padding: 20px;
+  margin-left: -211px;
+  padding: 16px;
   padding-left: 24px;
 
   border-radius: 10px;
@@ -1557,7 +1556,7 @@ input[type="radio"].visually-hidden {
 .modal-close {
   position: absolute;
 
-  top: 16px;
+  top: 14px;
   right: 17px;
 
   width: 18px;
@@ -1594,26 +1593,38 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-callback .callback-form-field {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 17px;
+  margin-left: -3px;
 }
 
-.callback-name,
-.callback-email {
+.callback-form-field .callback-name,
+.callback-form-field .callback-email {
   width: 254px;
+
+  font-size: 16px;
 }
 
 .callback-form-field .callback-message {
-  min-width: 410px;
-  max-width: 410px;
-  min-height: 155px;
+  min-width: 412px;
+  max-width: 412px;
+  min-height: 138px;
+
+  font-size: 16px;
+
+  padding-top: 5px;
+
+  resize: none;
 }
 
 .callback-button {
+  display: block;
+
   width: 139px;
 
   padding: 10px;
+  margin-right: 8px;
   margin-left: auto;
+  margin-top: 18px;
 
   font-size: 18px;
   font-weight: 700;
@@ -1623,6 +1634,8 @@ input[type="radio"].visually-hidden {
 .callback-form {
   display: flex;
   flex-direction: column;
+
+  margin-bottom: 10px;
 }
 
 /* поле ввода */
@@ -1632,16 +1645,16 @@ input[type="radio"].visually-hidden {
 
   font: inherit;
 
-  padding-top: 8px;
+  padding-top: 10px;
   padding-bottom: 8px;
+  padding-left: 13px;
   margin: 2px;
-  padding-left: 11px;
 
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
   background-color: #ffffff;
 
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   font-weight: 700;
 
