@@ -1015,7 +1015,6 @@ img {
 /* Слайдер */
 
 .site-wrapper {
-  min-width: 940px;
   background-color: #849d8f;
   background-image: url(../img/slider-item1.png);
   background-repeat: no-repeat;
@@ -1273,12 +1272,8 @@ img {
 }
 
 .index-map {
-  margin: 0 auto;
-  width: 1200px;
   height: 430px;
   background-image: url(../img/index-map-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .legend-wrapper {
