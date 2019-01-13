@@ -1116,12 +1116,14 @@ img {
 
 .legend-address span {
   display: inline-block;
+  vertical-align: baseline;
   width: 150px;
 }
 
 .legend-address b,
 .legend-phone b {
   display: inline-block;
+  vertical-align: baseline;
   width: 250px;
   margin: 0;
   padding: 0;
