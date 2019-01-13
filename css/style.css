@@ -358,6 +358,10 @@ img {
   margin-left: 9px;
 }
 
+.catalog-link:active {
+  box-shadow: inset 0px 2px 1px 0px #696969;
+}
+
 .menu-link span {
   display: inline-block;
   vertical-align: baseline;
@@ -474,6 +478,7 @@ img {
 }
 
 .submenu-link.active {
+  color: #ffffff;
   background-color: #d07058;
 }
 
@@ -1218,11 +1223,11 @@ main.inner-page {
   height: 32px;
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.8;
 }
 
-.social-button::after:active {
-  background-color: #e9e9e9;
+.social-button:hover::after,
+.social-button:active::after {
+  opacity: 0.8;
 }
 
 .social-button-twitter::after {
@@ -1477,7 +1482,7 @@ main.inner-page {
   box-sizing: content-box;
   font: inherit;
   padding-left: 13px;
-  margin: 2px;
+  margin: 1px;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
   background-color: #ffffff;
@@ -1488,13 +1493,7 @@ main.inner-page {
 }
 
 .input:hover {
-  box-shadow: inset 0 0 0 2px rgba(178, 178, 178, 0.52);
-  border: 1px solid rgba(178, 178, 178, 0.52);
-}
-
-.input:focus {
-  box-shadow: inset 0 0 0 2px rgba(46, 136, 228, 0.52);
-  border: 1px solid rgba(46, 136, 228, 0.52);
+  box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
 }
 
 .input::-webkit-input-placeholder {
@@ -1521,18 +1520,12 @@ main.inner-page {
   display: none;
 }
 
-/* для IE / Edge  */
+/* для IE  */
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .input:hover {
-    margin: 1px;
+    margin: 0px;
     box-shadow: none;
     border: 2px solid rgba(178, 178, 178, 0.52);
-  }
-
-  .input:focus {
-    margin: 1px;
-    box-shadow: none;
-    border: 2px solid rgba(46, 136, 228, 0.52);
   }
 }
