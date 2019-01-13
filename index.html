@@ -37,11 +37,9 @@
             <span class="visually-hidden">Поиск по сайту</span>
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-            <div class="search-content">
-              <label class="visually-hidden" for="search">Поисковая фраза</label>
-              <input class="input" id="search" type="search" name="search-query" placeholder="Что ищем?">
-              <button class="visually-hidden" type="submit">Найти</button>
-            </div>
+            <label class="visually-hidden" for="search">Поисковая фраза</label>
+            <input class="input" id="search" type="search" name="search-query" placeholder="Что ищем?">
+            <button class="visually-hidden" type="submit">Найти</button>
           </form>
         </div>
         <ul class="user-navigation">
@@ -56,22 +54,20 @@
               Вход
             </a>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-              <div class="login-content">
-                <p class="login-form-field">
-                  <label class="visually-hidden" for="user-email">Электронная почта</label>
-                  <input class="input" id="user-email" type="text" name="email" placeholder="Электронная почта">
-                </p>
-                <p class="login-form-field">
-                  <label class="visually-hidden" for="user-password">Пароль</label>
-                  <input class="input" id="user-password" type="password" name="password" placeholder="Пароль">
-                </p>
-                <div class="login-wrapper">
-                  <div class="login-link-wrapper">
-                    <a class="link-bg login-form-link" href="#"><span>Забыли пароль?</span></a>
-                    <a class="link-bg login-form-link" href="#"><span>Новая регистрация</span></a>
-                  </div>
-                  <button class="button login-button" type="submit">Войти</button>
+              <p class="login-form-field">
+                <label class="visually-hidden" for="user-email">Электронная почта</label>
+                <input class="input" id="user-email" type="text" name="email" placeholder="Электронная почта">
+              </p>
+              <p class="login-form-field">
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="input" id="user-password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <div class="login-wrapper">
+                <div class="login-link-wrapper">
+                  <a class="link-bg login-form-link" href="#"><span>Забыли пароль?</span></a>
+                  <a class="link-bg login-form-link" href="#"><span>Новая регистрация</span></a>
                 </div>
+                <button class="button login-button" type="submit">Войти</button>
               </div>
             </form>
           </li>
@@ -193,22 +189,20 @@
   <section class="modal modal-callback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="callback-form" action="https://echo.htmlacademy.ru" method="POST">
-      <div class="callback-content">
-        <p>Мы обязательно вам ответим!</p>
-        <p class="callback-form-field">
-          <label class="visually-hidden" for="callback-name">Имя</label>
-          <input class="input callback-name" id="callback-name" type="text" name="name" placeholder="Как вас зовут?">
-        </p>
-        <p class="callback-form-field">
-          <label class="visually-hidden" for="callback-email">Электронная почта</label>
-          <input class="input callback-email" id="callback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
-        </p>
-        <p class="callback-form-field">
-          <label class="visually-hidden" for="callback-message">Сообщение</label>
-          <textarea class="input callback-message" id="callback-message" name="message" placeholder="Напишите что-нибудь...">
-        </textarea>
-        </p>
-      </div>
+      <p>Мы обязательно вам ответим!</p>
+      <p class="callback-form-field">
+        <label class="visually-hidden" for="callback-name">Имя</label>
+        <input class="input callback-name" id="callback-name" type="text" name="name" placeholder="Как вас зовут?">
+      </p>
+      <p class="callback-form-field">
+        <label class="visually-hidden" for="callback-email">Электронная почта</label>
+        <input class="input callback-email" id="callback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+      </p>
+      <p class="callback-form-field">
+        <label class="visually-hidden" for="callback-message">Сообщение</label>
+        <textarea class="input callback-message" id="callback-message" name="message" placeholder="Напишите что-нибудь...">
+      </textarea>
+      </p>
       <button class="button callback-button" type="submit">Отправить</button>
     </form>
     <button class="modal-close">

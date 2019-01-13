@@ -505,11 +505,6 @@ img {
   background-color: #f8f7f4;
 }
 
-.search-content {
-  margin-top: 3px;
-  margin-bottom: 3px;
-}
-
 .search-form input[type=search] {
   width: 295px;
 }
@@ -627,12 +622,6 @@ img {
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
-}
-
-.login-content {
-  margin-top: 2px;
-  margin-left: -2px;
-  margin-bottom: 4px;
 }
 
 .login-form-field {
