@@ -204,12 +204,14 @@ img {
   z-index: 2;
 }
 
-.catalog-item:hover .preview-overlay,
+.catalog-item:hover::after,
 .catalog-item:hover .preview-button {
   display: block;
 }
 
-.preview-overlay {
+.catalog-item::after {
+  content: "";
+
   position: absolute;
   display: none;
   top: -12px;
