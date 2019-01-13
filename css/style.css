@@ -1074,8 +1074,6 @@ img {
 
 .subscribe input {
   width: 352px;
-  padding-top: 7px;
-  padding-bottom: 10px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1481,11 +1479,10 @@ main.inner-page {
 }
 
 .input {
+  height: 47px;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   font: inherit;
-  padding-top: 10px;
-  padding-bottom: 8px;
   padding-left: 13px;
   margin: 2px;
   border: 1px solid rgba(178, 178, 178, 0.52);
@@ -1531,11 +1528,7 @@ main.inner-page {
   display: none;
 }
 
-/* для IE  */
-
-.input::-ms-value {
-  padding-bottom: 4px;
-}
+/* для IE / Edge  */
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .input:hover {
