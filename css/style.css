@@ -1330,7 +1330,7 @@ img {
   color: #fefefe;
 }
 
-/* Фильтрs */
+/* Фильтры */
 
 /* Сортировка */
 
@@ -1358,6 +1358,10 @@ img {
   border-radius: 18px;
   background-color: rgba(248, 247, 244, 0.2);
   border: none;
+}
+
+.sorting-control select {
+  display: none;
 }
 
 .sorting-control::after {
