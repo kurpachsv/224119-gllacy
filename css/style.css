@@ -1330,6 +1330,54 @@ img {
   color: #fefefe;
 }
 
+/* Фильтрs */
+
+/* Сортировка */
+
+.sorting-filter {
+  position: relative;
+  width: 194px;
+  overflow: hidden;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sorting-title {
+  padding: 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.sorting-control {
+  position: relative;
+  padding: 7px 15px;
+  color: #ffffff;
+  border-radius: 18px;
+  background-color: rgba(248, 247, 244, 0.2);
+  border: none;
+}
+
+.sorting-control::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border: 5px solid transparent;
+  border-top: 8px solid #ffffff;
+  top: 15px;
+  right: 15px;
+}
+
+.sorting-control:hover {
+  color: #323232;
+}
+
+.sorting-control:hover::after {
+ border-top: 8px solid #323232;
+}
+
 main.inner-page {
   display: -webkit-box;
   display: -ms-flexbox;
