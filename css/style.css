@@ -187,6 +187,19 @@ img {
   margin-top: 20px;
 }
 
+.hit-item-content::before {
+  position: absolute;
+
+  content: "";
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url(../img/hit.svg);
+  background-repeat: no-repeat;
+  background-position: 0, 0;
+}
+
 .hit-item,
 .catalog-item {
   position: relative;
