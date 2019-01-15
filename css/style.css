@@ -1570,6 +1570,8 @@ main.inner-page {
 }
 
 .main-footer {
+  position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1578,6 +1580,18 @@ main.inner-page {
   justify-content: space-between;
   margin-top: 19px;
   padding-bottom: 30px;
+}
+
+.main-footer.inner::before {
+  position: absolute;
+  content: "";
+
+  top: -15px;
+
+  width: 1146px;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.3;
 }
 
 .social-items {
@@ -1807,7 +1821,12 @@ main.inner-page {
 }
 
 .inner-bottom-content {
-  min-height: 95px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  margin-bottom: 15px;
+  margin-right: 20px;
 }
 
 .modal {
@@ -1909,6 +1928,96 @@ main.inner-page {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 10px;
+}
+
+ /* Постраничник */
+
+ .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+
+  margin-top: 40px;
+
+  list-style: none;
+
+  color: #000000;
+ }
+
+ .pagination-item a {
+   position: relative;
+
+   margin-right: 10px;
+
+   color: #323232;
+ }
+
+ .pagination-item a {
+  text-align: center;
+
+  vertical-align: middle;
+  display: inline-block;
+
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+
+  padding-top: 5px;
+  margin-left: 3px;
+
+  text-decoration: none;
+ }
+
+ .pagination-item-current a {
+  background-color: #ffffff;
+  color: #353535;
+}
+
+.pagination-item-prev,
+.pagination-item-next {
+  position: relative;
+}
+
+.pagination-item-prev::after {
+  position: absolute;
+  content: "";
+
+  top: 7px;
+  left: -20px;
+
+  width: 8px;
+  height: 12px;
+
+  background-image: url(../img/icon-right-small.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  transform: rotate(180deg);
+  opacity: 0.3;
+}
+
+.pagination-item-next::after {
+  position: absolute;
+  content: "";
+
+  top: 7px;
+  left: 10px;
+  
+  width: 8px;
+  height: 12px;
+
+  background-image: url(../img/icon-right-small.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  cursor: pointer;
 }
 
 .input {
