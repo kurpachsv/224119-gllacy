@@ -1339,8 +1339,6 @@ img {
   width: 194px;
   overflow: hidden;
   border-radius: 18px;
-  font-size: 16px;
-  font-weight: 500;
 }
 
 .sorting-title {
@@ -1348,12 +1346,12 @@ img {
   margin: 0;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .sorting-control {
   position: relative;
-  padding: 7px 15px;
+  padding: 9px 15px;
   color: #ffffff;
   border-radius: 18px;
   background-color: rgba(248, 247, 244, 0.2);
@@ -1370,7 +1368,7 @@ img {
   display: block;
   border: 5px solid transparent;
   border-top: 8px solid #ffffff;
-  top: 15px;
+  top: 12px;
   right: 15px;
 }
 
@@ -1380,6 +1378,12 @@ img {
 
 .sorting-control:hover::after {
  border-top: 8px solid #323232;
+}
+
+.sorting-value {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
 }
 
 main.inner-page {
