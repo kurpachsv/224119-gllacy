@@ -147,33 +147,84 @@
     </ul>
     <div class="inner-top-content">
       <form method="GET" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter-item">
-          <legend>Сортировка:</legend>
-          <div class="sorting-filter">
-            <select>
-              <option selected value="by-popular">по популярности</option>
-            </select>
-            <div class="sorting-value">по популярности</div>
-          </div>
-        </fieldset>
-        <fieldset class="filter-item">
-          <legend>
-            Цена: 
-            от <span class="min-price">100</span>
-            &nbsp;<span class="price-currency">руб.</span> –
-            до <span class="max-price">500</span>
-            &nbsp;<span class="price-currency">руб.</span>
-          </legend>
-          <div class="range-filter">  
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="toggle toggle-min"></div>
-              <div class="toggle toggle-max"></div>
+        <div class="form-content">
+          <fieldset class="filter-item">
+            <legend>Сортировка:</legend>
+            <div class="filter sorting-filter">
+              <select class="visually-hidden">
+                <option selected value="by-popular">по популярности</option>
+              </select>
+              <div class="sorting-value">по популярности</div>
             </div>
-          </div>
-        </fieldset>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend>
+              Цена: 
+              от <span class="min-price">100</span>
+              &nbsp;<span class="price-currency">руб.</span> –
+              до <span class="max-price">500</span>
+              &nbsp;<span class="price-currency">руб.</span>
+            </legend>
+            <div class="filter range-filter">  
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend>Жирность:</legend>
+            <ul class="filter fat-filter">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-group" value="value-zero" id="value-zero">
+                <label for="value-zero">0%</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-group" value="value-less-10" id="value-less-10" checked>
+                <label for="value-less-10">до 10%</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-group" value="value-less-30" id="value-less-30">
+                <label for="value-less-30">до 30%</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-group" value="value-more-30" id="value-more-30">
+                <label for="value-more-30">выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form-content">
+          <fieldset class="filter-item">
+            <legend>Наполнители:</legend>
+            <ul class="filter filler-filter">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filler-group" value="value-chocolate" id="value-chocolate" checked>
+                <label for="value-chocolate">шоколадные</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filler-group" value="value-sugar" id="value-sugar" checked>
+                <label for="value-sugar">сахарные присыпки</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filler-group" value="value-fruits" id="value-fruits">
+                <label for="value-fruits">фрукты</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filler-group" value="value-syrups" id="value-syrups">
+                <label for="value-syrups">сиропы</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filler-group" value="value-jams" id="value-jams">
+                <label for="value-jams">джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filter-submit" type="submit">Применить</button>
+        </div>
       </form>
     </div>
     <section class="catalog">
