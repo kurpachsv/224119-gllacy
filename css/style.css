@@ -1334,35 +1334,94 @@ img {
 
 /* Сортировка */
 
-.sorting-filter {
-  position: relative;
-  width: 194px;
-  overflow: hidden;
-  border-radius: 18px;
-}
-
-.sorting-title {
-  padding: 10px;
+.filter-item {
   margin: 0;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-}
+  margin-left: 10px;
 
-.sorting-control {
-  position: relative;
-  padding: 9px 15px;
-  color: #ffffff;
-  border-radius: 18px;
-  background-color: rgba(248, 247, 244, 0.2);
+  padding: 0;
+
   border: none;
 }
 
-.sorting-control select {
+.sorting-filter,
+.range-filter {
+  width: 240px;
+
+  margin-top: 10px;
+  border-radius: 18px;
+
+  color: #ffffff;
+  background-color: rgba(248, 247, 244, 0.2);
+}
+
+.range-controls {
+  position: relative;
+
+  padding: 9px 15px;
+}
+
+.range-controls .scale {
+  width: 176px;
+  height: 4px;
+  background-color: rgba(248, 247, 244, 0.5);
+
+  padding-left: 30px;
+}
+
+.range-controls .bar {
+  width: 107px;
+  height: 4px;
+  background-color: #f8f7f4;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+  
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 30px;
+}
+
+.range-controls .toggle-max {
+  left: 144px;
+}
+
+.filter-item legend {
+  padding-left: 15px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500; 
+}
+
+.sorting-filter {
+  position: relative;
+  padding: 9px 15px;
+}
+
+.range-filter {
+  padding: 7px 15px;
+}
+
+.sorting-filter select {
   display: none;
 }
 
-.sorting-control::after {
+.sorting-filter::after {
   position: absolute;
   content: "";
   display: block;
@@ -1372,11 +1431,11 @@ img {
   right: 15px;
 }
 
-.sorting-control:hover {
+.sorting-filter:hover {
   color: #323232;
 }
 
-.sorting-control:hover::after {
+.sorting-filter:hover::after {
  border-top: 8px solid #323232;
 }
 
@@ -1607,6 +1666,12 @@ main.inner-page {
   -ms-flex-order: 3;
   order: 3;
   min-height: 198px;
+}
+
+.inner-top-content form {
+  display: flex;
+
+  padding-top: 20px;
 }
 
 .inner-bottom-content {
