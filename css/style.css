@@ -1338,7 +1338,7 @@ img {
   position: relative;
 }
 
-.legend-wrapper iframe {
+.index-map iframe {
   width: 100%;
 }
 
@@ -1350,7 +1350,7 @@ img {
   padding: 27px;
   border-radius: 15px;
   color: #323232;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .legend-address,
