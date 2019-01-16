@@ -184,7 +184,7 @@ img {
 }
 
 .hit-items {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .hit-item-content::before {
@@ -285,6 +285,16 @@ img {
   margin: 0;
   padding: 0;
   text-align: center;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.hit-item h3 {
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .hit-item-title,
@@ -1020,10 +1030,6 @@ img {
   background-image: url(../img/thermometer.svg);
 }
 
-.index-top-content {
-  min-height: 1150px;
-  margin-bottom: 45px;
-}
 
 /* Слайдер */
 
@@ -1054,7 +1060,7 @@ img {
 .slider {
   position: relative;
 
-  padding-top: 321px;
+  padding-top: 276px;
 
   text-align: center;
   color: #ffffff;
@@ -1083,7 +1089,7 @@ img {
 
 .slider-controls {
   position: absolute;
-  bottom: 63px;
+  bottom: 20px;
   left: 0;
   z-index: 20;
 
@@ -1092,8 +1098,8 @@ img {
 
 .slider-controls label {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 21px;
+  height: 21px;
   margin-right: 8px;
 
   vertical-align: top;
@@ -1102,6 +1108,16 @@ img {
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slide-button {
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
 }
 
 #product-1:checked ~ .site-wrapper {
@@ -1140,15 +1156,14 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 60px;
+  margin-top: 43px;
 }
 
 .banner {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 
-  min-height: 220px;
+  min-height: 227px;
   width: 560px;
   padding: 20px;
   padding-top: 12px;
@@ -1160,12 +1175,16 @@ img {
 
 .banner-title {
   margin: 0;
+  margin-top: 2px;
 
   font-size: 35px;
   line-height: 41px;
 }
 
-.banner-descriotion {
+.banner-description {
+  margin: 0;
+  margin-top: 16px;
+
   font-size: 18px;
   line-height: 22px;
 }
@@ -1177,6 +1196,7 @@ img {
   line-height: 24px;
 
   margin-left: auto;
+  margin-top: 42px;
 }
 
 .raspberries-banner {
@@ -1262,12 +1282,14 @@ img {
 }
 
 .subscribe-form {
-  margin-top: 37px;
+  margin-top: 32px;
   margin-left: 4px;
 }
 
 .subscribe input {
   width: 352px;
+  height: 40px;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1295,10 +1317,10 @@ img {
 
 .index-map-legend {
   position: absolute;
-  top: 62px;
+  top: 60px;
   right: 26px;
-  width: 302px;
-  padding: 30px 25px;
+  width: 300px;
+  padding: 27px;
   border-radius: 15px;
   color: #323232;
   background-color: #fff;
@@ -1307,7 +1329,7 @@ img {
 .legend-address,
 .legend-phone {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   padding: 0;
   font-size: 14px;
   font-weight: 400;
@@ -1591,7 +1613,7 @@ main.inner-page {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 19px;
+  margin-top: 13px;
   padding-bottom: 30px;
 }
 
