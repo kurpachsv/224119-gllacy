@@ -179,12 +179,9 @@ img {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0;
+  margin-top: 40px;
   padding: 0;
   list-style: none;
-}
-
-.hit-items {
-  margin-top: 40px;
 }
 
 .hit-item-content::before {
@@ -1375,7 +1372,7 @@ img {
 }
 
 .filter {
-  width: 220px;
+  width: 193px;
 
   margin-top: 10px;
   border-radius: 18px;
@@ -1388,7 +1385,7 @@ img {
 
 .sorting-filter {
   position: relative;
-  padding: 9px 15px;
+  padding: 8px 15px;
 }
 
 .sorting-filter::after {
@@ -1472,6 +1469,7 @@ img {
 }
 
 .range-filter {
+  width: 215px;
   padding: 7px 15px;
 }
 
@@ -1480,10 +1478,10 @@ img {
 .fat-filter,
 .filler-filter {
   margin: 0;
-  padding: 0;
+  margin-top: 13px;
 
-  margin-top: 10px;
-  padding: 7px 15px;
+  padding: 0;
+  padding: 7px 0;
 
   width: 420px;
 
@@ -1493,7 +1491,7 @@ img {
 }
 
 .filler-filter {
-  width: 750px;
+  width: 700px;
 }
 
 .filter-option {
@@ -1588,7 +1586,7 @@ main.inner-page {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-top: -10px;
+  margin-top: -23px;
 }
 
 .inner-page .breadcrumbs {
@@ -1617,11 +1615,15 @@ main.inner-page {
   padding-bottom: 30px;
 }
 
+.main-footer.inner {
+  margin-top: 30px;
+}
+
 .main-footer.inner::before {
   position: absolute;
   content: "";
 
-  top: -15px;
+  top: -16px;
 
   width: 1146px;
   height: 1px;
@@ -1766,7 +1768,6 @@ main.inner-page {
   list-style: none;
   color: #ffffff;
   margin: 0;
-  margin-top: 23px;
   padding: 0;
 }
 
@@ -1814,20 +1815,20 @@ main.inner-page {
   -webkit-box-ordinal-group: 4;
   -ms-flex-order: 3;
   order: 3;
-  min-height: 198px;
+  margin-top: 17px;
 }
 
 .inner-top-content form {
   display: flex;
   flex-direction: column;
-
-  padding-top: 20px;
 }
 
 .filter-submit {
   display: inline-block;
   width: 144px;
-  height: 37px;
+  height: 35px;
+
+  margin-left: 16px;
 
   font-size: 16px;
   font-weight: 500;
@@ -1839,7 +1840,6 @@ main.inner-page {
 
   border-radius: 18px;
 
-  color: #ffffff;
   background-color: rgba(248, 247, 244, 0.2);
 
   border: 2px solid #ffffff;
@@ -1848,11 +1848,10 @@ main.inner-page {
 
 .form-content {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   width: 900px;
 
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .inner-bottom-content {
@@ -2017,9 +2016,9 @@ main.inner-page {
   margin-bottom: 10px;
 }
 
- /* Постраничник */
+/* Постраничник */
 
- .pagination-list {
+.pagination-list {
   display: flex;
   flex-wrap: wrap;
 
@@ -2031,17 +2030,22 @@ main.inner-page {
   list-style: none;
 
   color: #000000;
- }
+}
 
- .pagination-item a {
-   position: relative;
+.pagination-item {
+  margin-left: -8px;
+  margin-top: -3px;
+}
 
-   margin-right: 10px;
+.pagination-item a {
+  position: relative;
 
-   color: #323232;
- }
+  margin-right: 10px;
 
- .pagination-item a {
+  color: #323232;
+}
+
+.pagination-item a {
   text-align: center;
 
   vertical-align: middle;
@@ -2056,13 +2060,12 @@ main.inner-page {
   font-weight: 500;
   line-height: 18px;
 
-  padding-top: 5px;
-  margin-left: 3px;
+  padding-top: 4px;
 
   text-decoration: none;
- }
+}
 
- .pagination-item-current a {
+.pagination-item-current a {
   background-color: #ffffff;
   color: #353535;
 }
@@ -2076,8 +2079,8 @@ main.inner-page {
   position: absolute;
   content: "";
 
-  top: 7px;
-  left: -20px;
+  top: 6px;
+  left: -30px;
 
   width: 8px;
   height: 12px;
