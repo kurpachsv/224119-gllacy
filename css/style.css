@@ -1338,6 +1338,10 @@ img {
   position: relative;
 }
 
+.legend-wrapper iframe {
+  width: 100%;
+}
+
 .index-map-legend {
   position: absolute;
   top: 60px;
