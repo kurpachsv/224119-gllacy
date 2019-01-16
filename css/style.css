@@ -2085,6 +2085,38 @@ main.inner-page {
   cursor: pointer;
 }
 
+/* Расписание */
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  margin-top: -10px;
+}
+
+.header-schedule .time {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+
+  margin-right: 0;
+}
+
+.header-schedule .phone {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+
+  margin-top: 5px;
+}
+
 .input {
   height: 47px;
   -webkit-box-sizing: content-box;
