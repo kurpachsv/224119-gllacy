@@ -6,7 +6,7 @@
   <title>HTML Academy: Глейси – Каталог</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.min.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="inner-page">
   <header class="container main-header">
@@ -155,11 +155,13 @@
         <div class="form-content-top">
           <fieldset class="filter-item">
             <legend>Сортировка:</legend>
-            <div class="filter sorting-filter">
-              <select class="visually-hidden">
-                <option selected value="by-popular">по популярности</option>
+            <div class="sort-by-wrapper">
+              <select class="filter sort-by-filter" name="sort-by">
+                <option selected value="popular">по популярности</option>
+                <option value="first-inexpensive">сначала недорогие</option>
+                <option value="first-expensive">сначала дорогие</option>
+                <option value="fat">по жирности</option>
               </select>
-              <div class="sorting-value">по популярности</div>
             </div>
           </fieldset>
           <fieldset class="filter-item">
@@ -175,8 +177,8 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <button type="button" class="toggle toggle-min"></button>
+                <button type="button" class="toggle toggle-max"></button>
               </div>
             </div>
           </fieldset>
@@ -184,19 +186,19 @@
             <legend>Жирность:</legend>
             <ul class="filter fat-filter">
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-group" value="value-zero" id="value-zero">
+                <input class="visually-hidden filter-input-radio" type="radio" name="fat-group" value="value-zero" id="value-zero">
                 <label for="value-zero">0%</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-group" value="value-less-10" id="value-less-10" checked>
+                <input class="visually-hidden filter-input-radio" type="radio" name="fat-group" value="value-less-10" id="value-less-10" checked>
                 <label for="value-less-10">до 10%</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-group" value="value-less-30" id="value-less-30">
+                <input class="visually-hidden filter-input-radio" type="radio" name="fat-group" value="value-less-30" id="value-less-30">
                 <label for="value-less-30">до 30%</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-group" value="value-more-30" id="value-more-30">
+                <input class="visually-hidden filter-input-radio" type="radio" name="fat-group" value="value-more-30" id="value-more-30">
                 <label for="value-more-30">выше 30%</label>
               </li>
             </ul>
@@ -207,23 +209,23 @@
             <legend>Наполнители:</legend>
             <ul class="filter filler-filter">
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filler-group" value="value-chocolate" id="value-chocolate" checked>
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="filler-group" value="value-chocolate" id="value-chocolate" checked>
                 <label for="value-chocolate">шоколадные</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filler-group" value="value-sugar" id="value-sugar" checked>
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="filler-group" value="value-sugar" id="value-sugar" checked>
                 <label for="value-sugar">сахарные присыпки</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filler-group" value="value-fruits" id="value-fruits">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="filler-group" value="value-fruits" id="value-fruits">
                 <label for="value-fruits">фрукты</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filler-group" value="value-syrups" id="value-syrups">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="filler-group" value="value-syrups" id="value-syrups">
                 <label for="value-syrups">сиропы</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filler-group" value="value-jams" id="value-jams">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="filler-group" value="value-jams" id="value-jams">
                 <label for="value-jams">джемы</label>
               </li>
             </ul>
