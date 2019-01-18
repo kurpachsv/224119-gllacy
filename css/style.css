@@ -1117,17 +1117,21 @@ input[type=radio].visually-hidden {
 }
 
 .slider-controls label {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
+
   width: 21px;
   height: 21px;
   margin-right: 8px;
-
-  vertical-align: top;
 
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-controls label:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .slide-button {
