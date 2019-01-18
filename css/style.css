@@ -189,18 +189,18 @@ input[type=radio].visually-hidden {
 
 .hit-items,
 .catalog-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
   margin: 0;
   margin-top: 40px;
   padding: 0;
   list-style: none;
+}
+
+.catalog-items::after {
+  content: '';
+  flex: auto;
 }
 
 .hit-item::before {
@@ -222,6 +222,11 @@ input[type=radio].visually-hidden {
   position: relative;
   width: 267px;
   margin-bottom: 39px;
+}
+
+.catalog-item {
+  margin-left: 0;
+  margin-right: 26px;
 }
 
 .hit-item:hover,
@@ -295,6 +300,7 @@ input[type=radio].visually-hidden {
   line-height: 22px;
 
   margin-top: 7px;
+  min-height: 40px;
 }
 
 .hit-item-title,
@@ -326,6 +332,10 @@ input[type=radio].visually-hidden {
   line-height: 45px;
   color: #ffffff;
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.catalog-item-price {
+  bottom: 64px;
 }
 
 .hit-item-currency,
@@ -1978,7 +1988,7 @@ main.inner-page {
   -ms-flex-pack: end;
   justify-content: flex-end;
   margin-right: -10px;
-  margin-top: 35px;
+  margin-top: 14px;
 }
 
 @-webkit-keyframes bounce {
