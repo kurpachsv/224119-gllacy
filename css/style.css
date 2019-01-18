@@ -2092,6 +2092,8 @@ main.inner-page {
   position: fixed;
   color: #323232;
   background-color: #f8f7f4;
+
+  z-index: 10;
 }
 
 .modal-show {
