@@ -1717,14 +1717,14 @@ main.inner-page {
 }
 
 .main-footer.inner {
-  margin-top: 30px;
+  padding-top: 34px;
 }
 
 .main-footer.inner::before {
   position: absolute;
   content: "";
 
-  top: -16px;
+  top: 15px;
 
   width: 1146px;
   height: 1px;
@@ -1984,9 +1984,8 @@ main.inner-page {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-
-  margin-bottom: 12px;
-  margin-right: 20px;
+  margin-right: -10px;
+  margin-top: 10px;
 }
 
 @-webkit-keyframes bounce {
@@ -2202,40 +2201,23 @@ main.inner-page {
 /* Постраничник */
 
 .pagination-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  padding: 0;
   margin: 0;
+  padding: 0;
 
-  margin-top: 40px;
+  margin-top: 26px;
 
   list-style: none;
 
-  color: #000000;
+  display: flex;
 }
 
-.pagination-item {
-  margin-right: -7px;
-  margin-top: -3px;
+.pagination-list li {
+  margin-right: 4px;
 }
 
-.pagination-item a {
-  position: relative;
-
-  margin-right: 10px;
-
-  color: #323232;
-}
-
-.pagination-item a {
+.pagination-link {
+  display: block;
   text-align: center;
-
-  vertical-align: middle;
-  display: inline-block;
 
   border-radius: 50%;
   width: 26px;
@@ -2251,51 +2233,55 @@ main.inner-page {
   text-decoration: none;
 }
 
-.pagination-item-current a {
+.pagination-item .pagination-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item .pagination-link:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item .pagination-link:active {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.pagination-item-current .pagination-link {
   background-color: #ffffff;
   color: #353535;
 }
 
-.pagination-item-prev,
-.pagination-item-next {
-  position: relative;
-}
+.pagination-item-prev .pagination-link {
+  display: block;
+  text-align: center;
 
-.pagination-item-prev::after {
-  position: absolute;
-  content: "";
-
-  top: 4px;
-  left: -25px;
-
-  width: 8px;
-  height: 12px;
+  width: 26px;
+  height: 26px;
 
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 9px 7px;
 
   -webkit-transform: rotate(180deg);
-
   -ms-transform: rotate(180deg);
-
   transform: rotate(180deg);
   opacity: 0.3;
 }
 
-.pagination-item-next::after {
-  position: absolute;
-  content: "";
+.pagination-item-current .pagination-link {
+  margin-right: -2px;
+}
 
-  top: 4px;
-  left: 13px;
+.pagination-item-next .pagination-link {
+  display: block;
+  text-align: center;
 
-  width: 8px;
-  height: 12px;
+  width: 26px;
+  height: 26px;
 
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 12px 7px;
 
   cursor: pointer;
 }
