@@ -203,8 +203,9 @@ input[type=radio].visually-hidden {
   list-style: none;
 }
 
-.hit-item-content::before {
+.hit-item::before {
   position: absolute;
+  z-index: 2;
 
   content: "";
 
@@ -219,15 +220,8 @@ input[type=radio].visually-hidden {
 .hit-item,
 .catalog-item {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   width: 267px;
-  margin-bottom: 41px
+  margin-bottom: 39px;
 }
 
 .hit-item:hover,
@@ -235,55 +229,10 @@ input[type=radio].visually-hidden {
   z-index: 2;
 }
 
-.hit-item:hover::after,
-.hit-item:hover .preview-button,
-.catalog-item:hover::after,
-.catalog-item:hover .preview-button {
+.hit-item:hover .catalog-item-cover,
+.catalog-item:hover .catalog-item-cover {
   display: block;
 }
-
-.hit-item::after,
-.catalog-item::after {
-  content: "";
-
-  position: absolute;
-  display: none;
-  top: -12px;
-  left: -12px;
-  width: 293px;
-  height: 405px;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-  background: rgba(248, 247, 244, 0.2);
-  border-radius: 10px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
-}
-
-.preview-button {
-  display: none;
-  position: absolute;
-  bottom: -54px;
-  left: 30px;
-  padding: 10px;
-  width: 200px;
-  height: 44px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #fefefe;
-  z-index: 2;
-}
-
-.hit-item:nth-child(4n),
-.catalog-item:nth-child(4n) {
-  margin-right: 0;
-}
-
 
 .hit-item-content,
 .catalog-item-content {
@@ -291,12 +240,51 @@ input[type=radio].visually-hidden {
   z-index: 1;
 }
 
+.catalog-item-cover {
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: -12px;
+  top: -7px;
+  width: 293px;
+  height: 100%;
+  min-height: 405px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background: rgba(248, 247, 244, 0.2);
+  border-radius: 11px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.preview-button {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 45px;
+  padding: 10px;
+  width: 200px;
+  height: 44px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fefefe;
+  margin-top: -26px;
+  margin-bottom: 23px;
+}
+
+.hit-item:nth-child(4n),
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .hit-item h3,
 .catalog-item h3 {
-  position: absolute;
-  top: 279px;
-  left: 5px;
-  right: 5px;
   max-width: 256px;
   margin: 0;
   padding: 0;
@@ -307,10 +295,9 @@ input[type=radio].visually-hidden {
   line-height: 22px;
 }
 
-.hit-item h3 {
-  padding-top: 2px;
-  padding-left: 2px;
-  padding-right: 2px;
+
+.catalog-item h3 {
+  margin-top: 7px;
 }
 
 .hit-item-title,
@@ -322,6 +309,12 @@ input[type=radio].visually-hidden {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.hit-item-title:hover,
+.catalog-item-title:hover {
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+  color: #ffbc9e;
+}
+
 .hit-item-image,
 .catalog-item-image {
   border-radius: 50%;
@@ -329,9 +322,9 @@ input[type=radio].visually-hidden {
 
 .hit-item-price,
 .catalog-item-price {
-  position: relative;
+  position: absolute;
+  bottom: 60px;
   left: -2px;
-  bottom: 63px;
   font-size: 45px;
   line-height: 45px;
   color: #ffffff;
@@ -341,7 +334,7 @@ input[type=radio].visually-hidden {
 .hit-item-currency,
 .catalog-item-currency {
   position: absolute;
-  top: 8px;
+  top: 4px;
   left: 82px;
   display: inline-block;
   vertical-align: middle;
@@ -369,7 +362,7 @@ input[type=radio].visually-hidden {
   margin-bottom: 10px;
   padding-top: 9px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .main-header-logo {
@@ -1988,7 +1981,7 @@ main.inner-page {
   -ms-flex-pack: end;
   justify-content: flex-end;
   margin-right: -10px;
-  margin-top: 10px;
+  margin-top: 35px;
 }
 
 @-webkit-keyframes bounce {
