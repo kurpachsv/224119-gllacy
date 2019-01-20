@@ -252,11 +252,10 @@ input[type=radio].visually-hidden {
 .catalog-item-cover {
   position: absolute;
   display: none;
-  bottom: 0;
+  bottom: -70px;
   left: -12px;
   top: -7px;
   width: 293px;
-  height: 100%;
   min-height: 405px;
   font-size: 18px;
   line-height: 24px;
@@ -274,7 +273,7 @@ input[type=radio].visually-hidden {
   display: block;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 21px;
   margin-left: 45px;
   padding: 10px;
   width: 200px;
@@ -283,8 +282,6 @@ input[type=radio].visually-hidden {
   font-weight: 700;
   line-height: 24px;
   color: #fefefe;
-  margin-top: -26px;
-  margin-bottom: 23px;
 }
 
 .hit-item:nth-child(4n),
@@ -334,7 +331,7 @@ input[type=radio].visually-hidden {
 .hit-item-price,
 .catalog-item-price {
   position: absolute;
-  bottom: 60px;
+  top: 211px;
   left: -2px;
   font-size: 45px;
   line-height: 45px;
@@ -342,14 +339,10 @@ input[type=radio].visually-hidden {
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.catalog-item-price {
-  bottom: 64px;
-}
-
 .hit-item-currency,
 .catalog-item-currency {
   position: absolute;
-  top: 4px;
+  top: 2px;
   left: 82px;
   display: inline-block;
   vertical-align: middle;
